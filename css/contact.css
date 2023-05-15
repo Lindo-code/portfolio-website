@@ -1,0 +1,9 @@
+
+@media screen and (min-width: 1025px) {}
+
+@media screen and (max-width: 968px) {
+  .bottom-icons {
+    font-size: 1em;
+  } 
+}
+
