@@ -1,15 +1,10 @@
 class PortfolioPage extends Page {
-  constructor(page, load) {
-    super(page, load)
-    this.cards = {
-        container: "",
-        allCards: "",
-    };
-    this.createContainer = [["projects-container", "block"], ["cards-container", "grid"]];
+  constructor(page, load, createContainer) {
+    super(page, load, createContainer);
     this.pages = ["home", "portfolio", "contact"];
     this.headings = {
       temp: null,
-      container: {},
+      container: {},// try to specify headings like projects
     };
     this.projects = {
       temp: null,
@@ -19,6 +14,10 @@ class PortfolioPage extends Page {
         completed: null,
         current: null,
       },
+    };
+    this.cards = {
+      container: "",
+      allCards: "",
     };
   }
 
@@ -41,7 +40,7 @@ class PortfolioPage extends Page {
     }
     const portfolioDivExists = this.checkIfDivExists(this.page);
     if (!portfolioDivExists) {
-      console.log("nnnnnn")
+      console.log("nnnnnn");
       // Add Completed Projects
       this.projects.temp = "complete";
       this.createProjectsContainer();
@@ -76,10 +75,7 @@ class PortfolioPage extends Page {
       this.createContainer[0][0]
     );
     this.projects.container[this.projects.temp].classList.remove("empty-div");
-    this.projects.container[this.projects.temp].setAttribute(
-      "div",
-      this.page
-    );
+    this.projects.container[this.projects.temp].setAttribute("div", this.page);
     this.projects.container[this.projects.temp].setAttribute(
       "display",
       this.createContainer[0][1]
@@ -122,8 +118,8 @@ class PortfolioPage extends Page {
       list += `<li>${item}</li>`;
     });
     return list;
-  };
-  
+  }
+
   addTechUsed(tech) {
     let list = "";
     tech.forEach((item) => {
@@ -131,7 +127,7 @@ class PortfolioPage extends Page {
                 <label>${item}</label> </br>`;
     });
     return list;
-  };
+  }
 
   addIcon(project) {
     return project.link !== null && project.repoLink !== null
@@ -142,13 +138,13 @@ class PortfolioPage extends Page {
       <i class="fas fa-globe" ></i>
     </a>`
       : project.repoLink === null
-        ? `<a href=${project.link} class="project-icon" target="_blank">
+      ? `<a href=${project.link} class="project-icon" target="_blank">
       <i class="fas fa-globe" ></i>
     </a>`
-        : `<a href=${project.repoLink} class="project-icon" target="_blank">
+      : `<a href=${project.repoLink} class="project-icon" target="_blank">
       <i class="fab fa-github-square" ></i>
     </a>`;
-  };
+  }
 
   createTitleContainer() {
     this.headings.container[this.headings.temp] = this.findEmptyDiv();
@@ -169,7 +165,10 @@ class PortfolioPage extends Page {
     this.cards.cardsContainer.classList.add(this.createContainer[1][0]);
     this.cards.cardsContainer.classList.remove("empty-div");
     this.cards.cardsContainer.setAttribute("div", this.page);
-    this.cards.cardsContainer.setAttribute("display", this.createContainer[1][1]);
+    this.cards.cardsContainer.setAttribute(
+      "display",
+      this.createContainer[1][1]
+    );
     this.cards.allCards += this.addCards();
   }
 
@@ -187,13 +186,15 @@ class PortfolioPage extends Page {
   }
 
   populatePage() {
-    console.log("happy")
+    console.log("happy");
     this.headings.container.innerHTML = this.headings.skills;
     this.cards.cardsContainer.innerHTML = this.cards.allCards;
     this.headings.container.innerHTML = this.headings.currProject;
     this.projects.container.current.innerHTML = this.projects.current;
     this.headings.container.innerHTML = this.headings.compProject;
-    this.projects.container.complete.innerHTML =
-      this.projects.complete.replace("undefined", "");
+    this.projects.container.complete.innerHTML = this.projects.complete.replace(
+      "undefined",
+      ""
+    );
   }
 }

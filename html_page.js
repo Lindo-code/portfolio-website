@@ -2,6 +2,7 @@ class Page {
   constructor(pageName, load) {
     this.page = pageName;
     this.isLoad = load;
+    this.createContainer = [["projects-container", "block"], ["cards-container", "grid"], ["image-text", "flex"]];
   }
 
   findEmptyDiv() {
@@ -44,7 +45,6 @@ class Page {
     elements.divs.forEach((div) => {
       //Show relevant content
         if (div.getAttribute("div") === page)
-        console.log("beef")
           div.style.display = div.getAttribute("display");
         else div.style.display = "none";
     });

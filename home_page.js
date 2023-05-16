@@ -1,7 +1,6 @@
 class HomePage extends Page {
-  constructor(page, load) {
-    super(page, load);
-    this.createContainer = [["image-text", "flex"]];
+  constructor(page, load, createContainer) {
+    super(page, load, createContainer);
     this.container = {
       temp: null,
       intro: "",
@@ -53,10 +52,10 @@ class HomePage extends Page {
       this.removeContent(this.page);
     } else {
       const div1 = this.findEmptyDiv();
-      div1.classList.add("image-text");
+      div1.classList.add(this.createContainer[2][0]);
       div1.classList.remove("empty-div");
-      div1.setAttribute("div", "home");
-      div1.setAttribute("display", "flex");
+      div1.setAttribute("div", this.page);
+      div1.setAttribute("display", this.createContainer[2][1]);
       const introDiv = `
         <img src=${homeContent.images.homeSvg} alt="person_sitting" class="svg-img" />
         <div class="project-details">
