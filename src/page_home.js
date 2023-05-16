@@ -4,6 +4,21 @@ class HomePage extends Main {
     this.about = {};
   }
 
+  createAndPopulateDiv() {
+    if (!this.isLoad) {
+      this.animateFadeAndDoubleSpin();
+    }
+    const divExist = this.checkIfDivExists(this.page);
+    this.currLinkStyle(this.page);
+    domElements.pageTitle.innerText = this.page.toUpperCase();
+    if (divExist) {
+      this.removeContent(this.page);
+    } else {
+      this.createIntroDiv();
+      this.about.container.innerHTML = this.about.introDiv;
+    }
+  }
+
   animateName() {
     setTimeout(() => {
       domElements.showTitle.style.opacity = 1;
@@ -26,27 +41,12 @@ class HomePage extends Main {
     }, 1000);
   }
 
-  CreateAndPopulateDiv() {
-    if (!this.isLoad) {
-      this.animateFadeAndDoubleSpin();
-    }
-    const divExist = this.checkIfDivExists(this.page);
-    this.currLinkStyle(this.page);
-    domElements.pageTitle.innerText = this.page.toUpperCase();
-    if (divExist) {
-      this.removeContent(this.page);
-    } else {
-      this.createIntroDiv();
-      this.about.container.innerHTML = this.about.introDiv;
-    }
-  }
-
   createIntroDiv() {
     this.about.container = this.findEmptyDiv();
     this.about.container.classList.add(this.createContainer[2][0]);
-    this.about.container.classList.remove("empty-div");
-    this.about.container.setAttribute("div", this.page);
-    this.about.container.setAttribute("display", this.createContainer[2][1]);
+    this.about.container.classList.remove(this.createContainer[3][0]);
+    this.about.container.setAttribute(this.createContainer[3][1], this.page);
+    this.about.container.setAttribute(this.createContainer[3][2], this.createContainer[2][1]);
     this.about.introDiv = `
       <img src=${homeContent.images.homeSvg} alt="person_sitting" class="svg-img" />
       <div class="project-details">

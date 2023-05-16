@@ -9,7 +9,7 @@ window.onload = () => {
   home.animateNavBar();
   home.animateRedLine();
   home.spinPortrait();
-  home.CreateAndPopulateDiv();
+  home.createAndPopulateDiv();
   home.showAll();
 };
 
@@ -18,13 +18,13 @@ domElements.textLinks.forEach((navLink) => {
     const url = navLink.getAttribute("page");
     if (url === "home") {
       home.isLoad = false;
-      home.CreateAndPopulateDiv();
+      home.createAndPopulateDiv();
     }
     if (url === "portfolio") {
-      portfolio.CreateAndPopulateDiv();
+      portfolio.createAndPopulateDiv();
     }
     if (url === "contact") {
-      contact.CreateAndPopulateDiv();
+      contact.createAndPopulateDiv();
     }
   });
 });

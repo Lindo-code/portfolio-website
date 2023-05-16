@@ -3,7 +3,7 @@ class ContactPage extends Main {
     super(page, pages, isLoad);
   }
 
-  CreateAndPopulateDiv() {
+  createAndPopulateDiv() {
     this.animateFadeAndDoubleSpin();
     this.currLinkStyle();
     domElements.pageTitle.innerText = this.page.toUpperCase();

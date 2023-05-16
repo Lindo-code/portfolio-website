@@ -2,21 +2,27 @@ class Main {
   constructor(pageName, load) {
     this.page = pageName;
     this.isLoad = load;
-    this.createContainer = [["projects-container", "block"], ["cards-container", "grid"], ["image-text", "flex"]];
     this.pages = ["home", "portfolio", "contact"];
+    this.animations = ["fade-in", "rotate"],
+    this.createContainer = [
+      ["projects-container", "block"],
+      ["cards-container", "grid"],
+      ["image-text", "flex"],
+      ["empty-div", "div", "display"]
+    ];
   }
 
   findEmptyDiv() {
     let emptyDiv;
     domElements.divs.forEach((div) => {
-      if (div.classList.contains("empty-div") !== undefined) {
-        div.classList.contains("empty-div")
+      if (div.classList.contains(this.createContainer[3][0]) !== undefined) {
+        div.classList.contains(this.createContainer[3][0])
           ? (emptyDiv = div)
           : (emptyDiv = emptyDiv);
       }
     });
     return emptyDiv;
-  };
+  }
 
   currLinkStyle() {
     domElements.textLinks.forEach((link) => {
@@ -25,30 +31,33 @@ class Main {
       if (link.getAttribute("page") === this.page)
         link.classList.add("bold-onclick", "text-underline");
     });
-  };
-  
+  }
+
   checkIfDivExists(name) {
     let divExist = false;
     domElements.divs.forEach((div) => {
-      (name !== undefined && div.getAttribute("div") === name[0]) ||
-        (name !== undefined && div.getAttribute("div") === name[1]) ||
-        (name !== undefined && div.getAttribute("div") === name[2])
+      (name !== undefined && div.getAttribute(this.createContainer[3][1]) === name[0]) ||
+      (name !== undefined && div.getAttribute(this.createContainer[3][1]) === name[1]) ||
+      (name !== undefined && div.getAttribute(this.createContainer[3][1]) === name[2])
         ? (divExist = true)
-        : typeof name === "string" && div.getAttribute("div") === name
-          ? (divExist = true)
-          : (divExist = divExist);
+        : typeof name === "string" && div.getAttribute(this.createContainer[3][1]) === name
+        ? (divExist = true)
+        : (divExist = divExist);
     });
     return divExist;
-  };
+  }
 
   removeContent(page) {
     domElements.divs.forEach((div) => {
-      console.log(typeof div.getAttribute(div))
-        if (div.getAttribute("div") === page || typeof div.getAttribute("div") !== "string")
-          div.style.display = div.getAttribute("display");
-        else div.style.display = "none";
+      console.log(typeof div.getAttribute(div));
+      if (
+        div.getAttribute(this.createContainer[3][1]) === page ||
+        typeof div.getAttribute(this.createContainer[3][1]) !== "string"
+      )
+        div.style.display = div.getAttribute(this.createContainer[3][2]);
+      else div.style.display = "none";
     });
-  };
+  }
 
   copyright() {
     const date = new Date();
@@ -64,30 +73,30 @@ class Main {
 
   spinPortrait() {
     setTimeout(() => {
-      domElements.selfPortrait.classList.toggle("rotate");
+      domElements.selfPortrait.classList.toggle(this.animations[1]);
     }, 2000);
   }
 
   animateFadeAndDoubleSpin() {
-    domElements.selfPortrait.classList.toggle("rotate");
+    domElements.selfPortrait.classList.toggle(this.animations[1]);
+    domElements.show.forEach((element) => {
+      element.classList.toggle(this.animations[0]);
+    });
+    setTimeout(() => {
+      domElements.selfPortrait.classList.toggle(this.animations[1]);
       domElements.show.forEach((element) => {
-        element.classList.toggle("fade-in");
+        element.classList.toggle(this.animations[0]);
       });
-      setTimeout(() => {
-        domElements.selfPortrait.classList.toggle("rotate");
-        domElements.show.forEach((element) => {
-          element.classList.toggle("fade-in");
-        });
-      }, 1000);
+    }, 1000);
   }
 
   showAll() {
     setTimeout(() => {
       domElements.show.forEach((element) => {
-        element.classList.toggle("fade-in");
+        element.classList.toggle(this.animations[0]);
       });
     }, 2200);
-  };
+  }
 
   handleSubmit(event) {
     event.preventDefault();

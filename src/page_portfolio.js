@@ -4,15 +4,15 @@ class PortfolioPage extends Main {
     this.cards = {};
     this.headings = {
       temp: null,
-      container: {}
+      container: {},
     };
     this.projects = {
       temp: null,
-      container: {}
+      container: {},
     };
   }
 
-  CreateAndPopulateDiv() {
+  createAndPopulateDiv() {
     this.animateFadeAndDoubleSpin();
     this.currLinkStyle();
     domElements.pageTitle.innerText = this.page.toUpperCase();
@@ -48,10 +48,10 @@ class PortfolioPage extends Main {
     this.projects.container[this.projects.temp].classList.add(
       this.createContainer[0][0]
     );
-    this.projects.container[this.projects.temp].classList.remove("empty-div");
-    this.projects.container[this.projects.temp].setAttribute("div", this.page);
+    this.projects.container[this.projects.temp].classList.remove(this.createContainer[3][0]);
+    this.projects.container[this.projects.temp].setAttribute(this.createContainer[3][1], this.page);
     this.projects.container[this.projects.temp].setAttribute(
-      "display",
+      this.createContainer[3][2],
       this.createContainer[0][1]
     );
     this.projects[this.projects.temp] += this.addProjects();
@@ -123,12 +123,12 @@ class PortfolioPage extends Main {
   createTitleContainer() {
     this.headings.container[this.headings.temp] = this.findEmptyDiv();
     this.headings.container[this.headings.temp].classList.add("heading");
-    this.headings.container[this.headings.temp].classList.remove("empty-div");
+    this.headings.container[this.headings.temp].classList.remove(this.createContainer[3][0]);
     this.headings.container[this.headings.temp].setAttribute(
-      "div",
-      "portfolio"
+      this.createContainer[3][1],
+      this.page
     );
-    this.headings.container[this.headings.temp].setAttribute("display", "flex");
+    this.headings.container[this.headings.temp].setAttribute(this.createContainer[3][1], "flex");
     this.headings[this.headings.temp] = `<h4 class="text-underline">${
       portfolioContent.strings.portfolioCategories[this.headings.temp]
     }</h4>`;
@@ -137,10 +137,10 @@ class PortfolioPage extends Main {
   createCardsContainer() {
     this.cards.cardsContainer = this.findEmptyDiv();
     this.cards.cardsContainer.classList.add(this.createContainer[1][0]);
-    this.cards.cardsContainer.classList.remove("empty-div");
-    this.cards.cardsContainer.setAttribute("div", this.page);
+    this.cards.cardsContainer.classList.remove(this.createContainer[3][0]);
+    this.cards.cardsContainer.setAttribute(this.createContainer[3][1], this.page);
     this.cards.cardsContainer.setAttribute(
-      "display",
+      this.createContainer[3][2],
       this.createContainer[1][1]
     );
     this.cards.allCards = "";
