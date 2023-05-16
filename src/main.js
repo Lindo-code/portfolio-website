@@ -12,7 +12,7 @@ window.onload = () => {
   home.showAll();
 };
 
-elements.textLinks.forEach((navLink) => {
+domElements.textLinks.forEach((navLink) => {
   navLink.addEventListener("click", () => {
     const url = navLink.getAttribute("page");
     if(url === "home") {

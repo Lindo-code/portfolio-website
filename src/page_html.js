@@ -7,7 +7,7 @@ class Page {
 
   findEmptyDiv() {
     let emptyDiv;
-    elements.divs.forEach((div) => {
+    domElements.divs.forEach((div) => {
       if (div.classList.contains("empty-div") !== undefined) {
         div.classList.contains("empty-div")
           ? (emptyDiv = div)
@@ -18,7 +18,7 @@ class Page {
   };
 
   currLinkStyle() {
-    elements.textLinks.forEach((link) => {
+    domElements.textLinks.forEach((link) => {
       // Move underline to current link
       if (link.classList.contains("bold-onclick", "text-underline"))
         link.classList.remove(...link.classList);
@@ -29,7 +29,7 @@ class Page {
   
   checkIfDivExists(name) {
     let divExist = false;
-    elements.divs.forEach((div) => {
+    domElements.divs.forEach((div) => {
       (name !== undefined && div.getAttribute("div") === name[0]) ||
         (name !== undefined && div.getAttribute("div") === name[1]) ||
         (name !== undefined && div.getAttribute("div") === name[2])
@@ -42,7 +42,7 @@ class Page {
   };
 
   removeContent(page) {
-    elements.divs.forEach((div) => {
+    domElements.divs.forEach((div) => {
       //Show relevant content
         if (div.getAttribute("div") === page)
           div.style.display = div.getAttribute("display");
@@ -54,23 +54,23 @@ class Page {
     const date = new Date();
     const currYear = date.getFullYear();
     const str = `${currYear}`;
-    elements.year.innerText = str;
+    domElements.year.innerText = str;
   }
 
   animateRedLine() {
-    elements.redLine.style.opacity = 1;
-    elements.redLine.style.margin = "1em 10% 1em 10%";
+    domElements.redLine.style.opacity = 1;
+    domElements.redLine.style.margin = "1em 10% 1em 10%";
   }
 
   spinPortrait() {
     setTimeout(() => {
-      elements.selfPortrait.classList.toggle("rotate");
+      domElements.selfPortrait.classList.toggle("rotate");
     }, 2000);
   }
 
   showAll() {
     setTimeout(() => {
-      elements.show.forEach((element) => {
+      domElements.show.forEach((element) => {
         element.classList.toggle("fade-in");
       });
     }, 2200);
@@ -80,28 +80,28 @@ class Page {
     event.preventDefault();
     const data = new FormData(event.target);
     fetch(event.target.action, {
-      method: elements.form.method,
+      method: domElements.form.method,
       body: data,
       headers: { Accept: "application/json" },
     }).then((response) => {
       if (response.ok) {
-        elements.status.innerHTML = "Thanks for your submission!";
-        elements.form.reset();
+        domElements.status.innerHTML = "Thanks for your submission!";
+        domElements.form.reset();
       } else {
         response.json().then((data) => {
           if (Object.hasOwn(data, "errors")) {
-            elements.status.innerHTML = data["errors"]
+            domElements.status.innerHTML = data["errors"]
               .map((error) => error["message"])
               .join(", ");
           } else {
-            elements.status.innerHTML =
+            domElements.status.innerHTML =
               "Oops! There was a problem submitting your form";
           }
         });
       }
     });
     if (error) {
-      elements.status.innerHTML =
+      domElements.status.innerHTML =
         "Oops! There was a problem submitting your form";
       throw new Error(error);
     }

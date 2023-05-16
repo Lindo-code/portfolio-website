@@ -12,42 +12,42 @@ class HomePage extends Page {
 
   animateName() {
     setTimeout(() => {
-      elements.showTitle.style.opacity = 1;
-      elements.showTitle.style.marginLeft = 0;
-      elements.showTitle.classList.toggle("bounce-in-left");
+      domElements.showTitle.style.opacity = 1;
+      domElements.showTitle.style.marginLeft = 0;
+      domElements.showTitle.classList.toggle("bounce-in-left");
     }, 1000);
   }
 
   animateImageContainer() {
     setTimeout(() => {
-      elements.imageDiv.classList.toggle("bounce-in-top");
+      domElements.imageDiv.classList.toggle("bounce-in-top");
     }, 500);
   }
 
   animateNavBar() {
     setTimeout(() => {
-      elements.navBar.style.opacity = 1;
-      elements.navBar.style.marginRight = 0;
-      elements.navBar.classList.toggle("bounce-in-right");
+      domElements.navBar.style.opacity = 1;
+      domElements.navBar.style.marginRight = 0;
+      domElements.navBar.classList.toggle("bounce-in-right");
     }, 1000);
   }
 
   CreateAndPopulateDiv() {
     if (!this.isLoad) {
-      elements.selfPortrait.classList.toggle("rotate");
-      elements.show.forEach((element) => {
+      domElements.selfPortrait.classList.toggle("rotate");
+      domElements.show.forEach((element) => {
         element.classList.toggle("fade-in");
       });
       setTimeout(() => {
-        elements.selfPortrait.classList.toggle("rotate");
-        elements.show.forEach((element) => {
+        domElements.selfPortrait.classList.toggle("rotate");
+        domElements.show.forEach((element) => {
           element.classList.toggle("fade-in");
         });
       }, 1000);
     }
     const divExist = this.checkIfDivExists(this.page);
     this.currLinkStyle(this.page);
-    elements.pageTitle.innerText = this.page.toUpperCase();
+    domElements.pageTitle.innerText = this.page.toUpperCase();
     if (divExist === true) {
       this.removeContent(this.page);
     } else {

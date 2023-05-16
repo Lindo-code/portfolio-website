@@ -22,18 +22,18 @@ class PortfolioPage extends Page {
   }
 
   CreateAndPopulateDiv() {
-    elements.selfPortrait.classList.toggle("rotate");
-    elements.show.forEach((element) => {
+    domElements.selfPortrait.classList.toggle("rotate");
+    domElements.show.forEach((element) => {
       element.classList.toggle("fade-in");
     });
     setTimeout(() => {
-      elements.selfPortrait.classList.toggle("rotate");
-      elements.show.forEach((element) => {
+      domElements.selfPortrait.classList.toggle("rotate");
+      domElements.show.forEach((element) => {
         element.classList.toggle("fade-in");
       });
     }, 1000);
     this.currLinkStyle();
-    elements.pageTitle.innerText = this.page.toUpperCase();
+    domElements.pageTitle.innerText = this.page.toUpperCase();
     const divExist = this.checkIfDivExists(this.pages);
     if (divExist) {
       this.removeContent(this.page);
