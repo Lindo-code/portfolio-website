@@ -1,5 +1,6 @@
 const home = new HomePage("home", true);
 const portfolio = new PortfolioPage("portfolio", false);
+const contact = new ContactPage("contact", false);
 
 window.onload = () => {
   home.copyright();
@@ -15,18 +16,15 @@ window.onload = () => {
 domElements.textLinks.forEach((navLink) => {
   navLink.addEventListener("click", () => {
     const url = navLink.getAttribute("page");
-    if(url === "home") {
+    if (url === "home") {
       home.isLoad = false;
-      home.CreateAndPopulateDiv()
+      home.CreateAndPopulateDiv();
     }
-    if(url === "portfolio") {
-      portfolio.CreateAndPopulateDiv()
+    if (url === "portfolio") {
+      portfolio.CreateAndPopulateDiv();
     }
-    if(url === "contact") {
-      // contact.spinPortrait();
-      // contact.showAll();
-      console.log("bohoo!")
+    if (url === "contact") {
+      contact.CreateAndPopulateDiv();
     }
-  })
-},);
-
+  });
+});

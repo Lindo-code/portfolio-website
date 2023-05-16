@@ -1,4 +1,4 @@
-class HomePage extends Page {
+class HomePage extends Main {
   constructor(page, load, createContainer) {
     super(page, load, createContainer);
     this.about = {};

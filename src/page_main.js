@@ -1,9 +1,9 @@
-class Page {
+class Main {
   constructor(pageName, load) {
     this.page = pageName;
     this.isLoad = load;
-    this.count = 0;
     this.createContainer = [["projects-container", "block"], ["cards-container", "grid"], ["image-text", "flex"]];
+    this.pages = ["home", "portfolio", "contact"];
   }
 
   findEmptyDiv() {

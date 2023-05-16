@@ -1,7 +1,7 @@
-class PortfolioPage extends Page {
-  constructor(page, load, createContainer, count) {
-    super(page, load, createContainer, count);
-    this.pages = ["home", "portfolio", "contact"];
+class PortfolioPage extends Main {
+  constructor(page, pages, load, createContainer, count) {
+    super(page, pages, load, createContainer, count);
+    this.cards = {};
     this.headings = {
       temp: null,
       container: {}
@@ -10,11 +10,9 @@ class PortfolioPage extends Page {
       temp: null,
       container: {}
     };
-    this.cards = {};
   }
 
   CreateAndPopulateDiv() {
-    if (this.count === 0) this.count++;
     this.animateFadeAndDoubleSpin();
     this.currLinkStyle();
     domElements.pageTitle.innerText = this.page.toUpperCase();
@@ -23,9 +21,7 @@ class PortfolioPage extends Page {
       this.removeContent(this.page);
     }
     const portfolioDivExists = this.checkIfDivExists(this.page);
-    console.log(`showCards? ${portfolioDivExists}`)
     if (!portfolioDivExists) {
-      console.log("nnnnnn");
       this.projects.temp = "complete";
       this.createProjectsContainer();
 
