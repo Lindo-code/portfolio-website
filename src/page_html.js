@@ -2,6 +2,7 @@ class Page {
   constructor(pageName, load) {
     this.page = pageName;
     this.isLoad = load;
+    this.count = 0;
     this.createContainer = [["projects-container", "block"], ["cards-container", "grid"], ["image-text", "flex"]];
   }
 
@@ -19,7 +20,6 @@ class Page {
 
   currLinkStyle() {
     domElements.textLinks.forEach((link) => {
-      // Move underline to current link
       if (link.classList.contains("bold-onclick", "text-underline"))
         link.classList.remove(...link.classList);
       if (link.getAttribute("page") === this.page)
@@ -43,8 +43,8 @@ class Page {
 
   removeContent(page) {
     domElements.divs.forEach((div) => {
-      //Show relevant content
-        if (div.getAttribute("div") === page)
+      console.log(typeof div.getAttribute(div))
+        if (div.getAttribute("div") === page || typeof div.getAttribute("div") !== "string")
           div.style.display = div.getAttribute("display");
         else div.style.display = "none";
     });
@@ -66,6 +66,19 @@ class Page {
     setTimeout(() => {
       domElements.selfPortrait.classList.toggle("rotate");
     }, 2000);
+  }
+
+  animateFadeAndDoubleSpin() {
+    domElements.selfPortrait.classList.toggle("rotate");
+      domElements.show.forEach((element) => {
+        element.classList.toggle("fade-in");
+      });
+      setTimeout(() => {
+        domElements.selfPortrait.classList.toggle("rotate");
+        domElements.show.forEach((element) => {
+          element.classList.toggle("fade-in");
+        });
+      }, 1000);
   }
 
   showAll() {

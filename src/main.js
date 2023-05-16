@@ -30,13 +30,3 @@ domElements.textLinks.forEach((navLink) => {
   })
 },);
 
-
-// function scrollFunction() {
-//   (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? query.scrollBtn.style.display = "block" : query.scrollBtn.style.display = "none";
-// };
-
-// function delay(url) {
-//   setTimeout(function() {
-//       window.open(url, "_blank") = url;
-//   }, 1000);
-// };

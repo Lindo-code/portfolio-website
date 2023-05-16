@@ -1,37 +1,21 @@
 class PortfolioPage extends Page {
-  constructor(page, load, createContainer) {
-    super(page, load, createContainer);
+  constructor(page, load, createContainer, count) {
+    super(page, load, createContainer, count);
     this.pages = ["home", "portfolio", "contact"];
     this.headings = {
       temp: null,
-      container: {},// try to specify headings like projects
+      container: {}
     };
     this.projects = {
       temp: null,
-      complete: "",
-      current: "",
-      container: {
-        completed: null,
-        current: null,
-      },
+      container: {}
     };
-    this.cards = {
-      container: "",
-      allCards: "",
-    };
+    this.cards = {};
   }
 
   CreateAndPopulateDiv() {
-    domElements.selfPortrait.classList.toggle("rotate");
-    domElements.show.forEach((element) => {
-      element.classList.toggle("fade-in");
-    });
-    setTimeout(() => {
-      domElements.selfPortrait.classList.toggle("rotate");
-      domElements.show.forEach((element) => {
-        element.classList.toggle("fade-in");
-      });
-    }, 1000);
+    if (this.count === 0) this.count++;
+    this.animateFadeAndDoubleSpin();
     this.currLinkStyle();
     domElements.pageTitle.innerText = this.page.toUpperCase();
     const divExist = this.checkIfDivExists(this.pages);
@@ -39,32 +23,26 @@ class PortfolioPage extends Page {
       this.removeContent(this.page);
     }
     const portfolioDivExists = this.checkIfDivExists(this.page);
+    console.log(`showCards? ${portfolioDivExists}`)
     if (!portfolioDivExists) {
       console.log("nnnnnn");
-      // Add Completed Projects
       this.projects.temp = "complete";
       this.createProjectsContainer();
 
-      // Add completed projects title
       this.headings.temp = "compProject";
       this.createTitleContainer();
 
-      // Add current projects
       this.projects.temp = "current";
       this.createProjectsContainer();
 
-      // Add current projects title
       this.headings.temp = "currProject";
       this.createTitleContainer();
 
-      // Add cards container & cards
       this.createCardsContainer();
 
-      // Add Tech Skills title
       this.headings.temp = "skills";
       this.createTitleContainer();
 
-      // Add content
       this.populatePage();
     }
   }
@@ -107,7 +85,7 @@ class PortfolioPage extends Page {
                   ${this.addIcon(projects[i])}
               </div>
           </div>
-        </div>`;
+        </div><br><br>`;
     }
     return projectsDiv;
   }
@@ -169,6 +147,7 @@ class PortfolioPage extends Page {
       "display",
       this.createContainer[1][1]
     );
+    this.cards.allCards = "";
     this.cards.allCards += this.addCards();
   }
 
@@ -178,7 +157,7 @@ class PortfolioPage extends Page {
     for (let i = 0; i < cards.length; i++) {
       allCards += `<div class='card'><h4>${cards[i].title}</h4>
         <img src=${cards[i].img} alt="javascript_abbreviation_image" class="skill-img" />
-        <a href=${cards[i].link}>
+        <a href=${cards[i].link} target="_blank">
           <span>${portfolioContent.strings.cardLinkTitle} <span style="color:red; ">${portfolioContent.strings.cardLinkIcon}</span></span>
         </a></div>`;
     }
@@ -186,12 +165,14 @@ class PortfolioPage extends Page {
   }
 
   populatePage() {
-    console.log("happy");
-    this.headings.container.innerHTML = this.headings.skills;
+    this.headings.container.skills.innerHTML = this.headings.skills;
     this.cards.cardsContainer.innerHTML = this.cards.allCards;
-    this.headings.container.innerHTML = this.headings.currProject;
-    this.projects.container.current.innerHTML = this.projects.current;
-    this.headings.container.innerHTML = this.headings.compProject;
+    this.headings.container.currProject.innerHTML = this.headings.currProject;
+    this.projects.container.current.innerHTML = this.projects.current.replace(
+      "undefined",
+      ""
+    );
+    this.headings.container.compProject.innerHTML = this.headings.compProject;
     this.projects.container.complete.innerHTML = this.projects.complete.replace(
       "undefined",
       ""

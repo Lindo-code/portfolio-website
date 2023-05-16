@@ -63,23 +63,23 @@ const portfolioContent = {
     {
       img: "../assets/icons/html.png",
       title: "HTML",
-      link: "https://www.sololearn.com/profile/25472119",
+      link: "https://www.freecodecamp.org/fcc44702f65-8d01-4507-9afb-4e03b1dbf7ce",
     },
     {
       img: "../assets/icons/css.png",
       title: "CSS",
-      link: "https://www.sololearn.com/profile/25472119",
+      link: "https://www.freecodecamp.org/fcc44702f65-8d01-4507-9afb-4e03b1dbf7ce",
     },
     {
       img: "../assets/icons/postgresql.jpg",
       title: "POSTGRESQL",
       link: "https://www.sololearn.com/profile/25472119",
     },
-    { img: "../assets/icons/docker.png", title: "DOCKER" },
-    { img: "../assets/icons/jasmine.png", title: "JASMINE" },
-    { img: "../assets/icons/git.png", title: "GIT" },
-    { img: "../assets/icons/node.png", title: "NODE" },
-    { img: "../assets/icons/webpack.png", title: "WEBPACK" },
+    { img: "../assets/icons/docker.png", title: "DOCKER", link: "https://github.com/Lindo-code" },
+    { img: "../assets/icons/jasmine.png", title: "JASMINE", link: "https://github.com/Lindo-code" },
+    { img: "../assets/icons/git.png", title: "GIT", link: "https://github.com/Lindo-code"},
+    { img: "../assets/icons/node.png", title: "NODE", link: "https://github.com/Lindo-code" },
+    { img: "../assets/icons/webpack.png", title: "WEBPACK", link: "https://github.com/Lindo-code" },
   ],
   current: [
     {
@@ -88,7 +88,7 @@ const portfolioContent = {
       alt: "personal_website_preview",
       repoLink: "https://github.com/Lindo-code/personal_website.git",
       link: null,
-      objectives: ["Create personal website", "Host website on Github Pages"],
+      objectives: ["Create personal website", "Host as website on Github Pages"],
       tools: ["Javascript", "HTML", "CSS", "CSS Grid", "Flexbox", "Webpack"],
     },
     {
@@ -99,7 +99,7 @@ const portfolioContent = {
       link: null,
       objectives: [
         "Revamp bullies training website",
-        "Host revamped website on Github Pages",
+        "Host as website on Github Pages",
       ],
       tools: [
         "Javascript Basics",
@@ -138,8 +138,8 @@ const portfolioContent = {
         "https://github.com/Lindo-code/sunnyside-agency-landing-page-main",
       link: "https://lindo-code.github.io/sunnyside-agency-landing-page-main/",
       objectives: [
-        "Create responsive landing page",
-        "Host Sunnyside Agency Landing Page on Github Pages",
+        "Create website landing page",
+        "Host as webpage on Github Pages",
         "Publish Landing Page",
       ],
       tools: ["Javascript", "HTML", "CSS", "CSS Grid", "Flexbox"],
@@ -148,12 +148,11 @@ const portfolioContent = {
       img: "../assets/project-previews/project-preview(semitone).jpg",
       title: "SEMITONE DIFFERENCE",
       alt: "app_preview",
-      repoLink: null,
-      link: "https://lindo-code.github.io/ecnereffid_enotimes/",
+      repoLink: "https://github.com/Umuzi-org/Lindo-Matabane-199-semitone-difference-basic-algorithm-javascript",
+      link: null,
       objectives: [
         "Create Semitone Difference App",
-        "Host App on Github Pages",
-        "Publish App",
+        "Host App on Github Pages"
       ],
       tools: [
         "Javascript Basics",
@@ -169,10 +168,10 @@ const portfolioContent = {
       img: "../assets/project-previews/project-preview(memory).jpg",
       title: "MEMORY: CARD GAME",
       alt: "card_game_preview",
-      repoLink: null,
-      link: "https://lindo-code.github.io/emag-yromem-my/",
+      repoLink: "https://github.com/Umuzi-org/Lindo-Matabane-222-memory-game-in-vanilla-js-javascript",
+      link: null,
       objectives: [
-        "Create Semitone Difference App",
+        "Create Memory Game Web App",
         "Host App on Github Pages",
         "Publish App",
       ],
