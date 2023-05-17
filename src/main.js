@@ -15,7 +15,7 @@ window.onload = () => {
 
 domElements.textLinks.forEach((navLink) => {
   navLink.addEventListener("click", () => {
-    const url = navLink.getAttribute("page");
+    const url = navLink.getAttribute("id");
     if (url === "home") {
       home.isLoad = false;
       home.createAndPopulateDiv();
