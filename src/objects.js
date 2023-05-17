@@ -106,7 +106,7 @@ const portfolioContent = {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(personal).jpg",
       title: "FIRST PERSONAL WEBSITE",
       alt: "personal_website_preview",
-      repoLink: "https://github.com/Lindo-code/personal_website.git",
+      repoLink: "https://github.com/Lindo-code/portfolio-website",
       link: null,
       objectives: [
         "Create personal website",
