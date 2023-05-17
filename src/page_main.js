@@ -49,7 +49,6 @@ class Main {
 
   removeContent(page) {
     domElements.divs.forEach((div) => {
-      console.log(typeof div.getAttribute(div));
       if (
         div.getAttribute(this.createContainer[3][1]) === page ||
         typeof div.getAttribute(this.createContainer[3][1]) !== "string"
