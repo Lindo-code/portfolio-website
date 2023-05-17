@@ -172,7 +172,7 @@ const portfolioContent = {
       title: "SEMITONE DIFFERENCE",
       alt: "app_preview",
       repoLink:
-        "https://github.com/Umuzi-org/Lindo-Matabane-199-semitone-difference-basic-algorithm-javascript",
+        "https://github.com/Lindo-code",
       link: null,
       objectives: [
         "Create Semitone Difference App",
@@ -193,7 +193,7 @@ const portfolioContent = {
       title: "MEMORY: CARD GAME",
       alt: "card_game_preview",
       repoLink:
-        "https://github.com/Umuzi-org/Lindo-Matabane-222-memory-game-in-vanilla-js-javascript",
+        "https://github.com/Lindo-code",
       link: null,
       objectives: [
         "Create Memory Game Web App",
