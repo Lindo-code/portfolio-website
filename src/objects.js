@@ -51,7 +51,7 @@ const portfolioContent = {
 
   cards: [
     {
-      img: "./assets/icons/py.png",
+      img: "/assets/icons/py.png",
       title: "PYTHON",
       link: "https://www.sololearn.com/profile/25472119",
     },
