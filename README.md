@@ -1,4 +1,4 @@
-<h1 align="center">PERSONAL WEBSITE</h1>
+<h1 align="center">PORTFOLIO WEBSITE</h1>
 
 <p align="center">
   A responsive multiple page website to showcase my portfolio
@@ -10,7 +10,7 @@
 
 ## Link
 
-- [Personal Website](https://lindo-code.tk/ "View Website")
+- [Portfolio Website](https://lindo-code.github.io/portfolio-website/ "View Website")
 
 ## Built With
 
@@ -19,18 +19,14 @@
 - CSS
 - CSS GRID
 - FLEXBOX
-- WEBPACK
 
 ## Future Updates
 
 - [x] Responsive To Desktop
 - [x] E-mail form
-- [ ] Add Unit Testing For Dom
 - [ ] Add Collapsing Button In Skills & Project Divs
 - [ ] Add Animation To Collapsing Divs 
-- [x] Add General Animations When Page Opened Or Closed
-- [x] Make Site Dynamic
-- [x] Cleanup
+
 
 
 ## Author
