@@ -28,7 +28,7 @@ class Main {
     domElements.textLinks.forEach((link) => {
       if (link.classList.contains("bold-onclick", "text-underline"))
         link.classList.remove(...link.classList);
-      if (link.getAttribute("page") === this.page)
+      if (link.getAttribute("id") === this.page)
         link.classList.add("bold-onclick", "text-underline");
     });
   }
