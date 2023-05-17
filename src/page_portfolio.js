@@ -129,7 +129,6 @@ class PortfolioPage extends Main {
       this.page
     );
     this.headings.container[this.headings.temp].setAttribute(this.createContainer[3][2], "flex");
-    console.log(this.headings.container[this.headings.temp])
     this.headings[this.headings.temp] = `<h4 class="text-underline">${
       portfolioContent.strings.portfolioCategories[this.headings.temp]
     }</h4>`;
