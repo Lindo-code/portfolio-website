@@ -51,59 +51,59 @@ const portfolioContent = {
 
   cards: [
     {
-      img: "/assets/icons/py.png",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/py.png",
       title: "PYTHON",
       link: "https://www.sololearn.com/profile/25472119",
     },
     {
-      img: "/assets/icons/js.png",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/js.png",
       title: "JAVASCRIPT",
       link: "https://www.freecodecamp.org/fcc44702f65-8d01-4507-9afb-4e03b1dbf7ce",
     },
     {
-      img: "/assets/icons/html.png",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/html.png",
       title: "HTML",
       link: "https://www.freecodecamp.org/fcc44702f65-8d01-4507-9afb-4e03b1dbf7ce",
     },
     {
-      img: "/assets/icons/css.png",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/css.png",
       title: "CSS",
       link: "https://www.freecodecamp.org/fcc44702f65-8d01-4507-9afb-4e03b1dbf7ce",
     },
     {
-      img: "/assets/icons/postgresql.jpg",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/postgresql.jpg",
       title: "POSTGRESQL",
       link: "https://www.sololearn.com/profile/25472119",
     },
     {
-      img: "/assets/icons/docker.png",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/docker.png",
       title: "DOCKER",
       link: "https://github.com/Lindo-code",
     },
     {
-      img: "/assets/icons/jasmine.png",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/jasmine.png",
       title: "JASMINE",
       link: "https://github.com/Lindo-code",
     },
     {
-      img: "/assets/icons/git.png",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/git.png",
       title: "GIT",
       link: "https://github.com/Lindo-code",
     },
     {
-      img: "/assets/icons/node.png",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/node.png",
       title: "NODE",
       link: "https://github.com/Lindo-code",
     },
     {
-      img: "/assets/icons/webpack.png",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/webpack.png",
       title: "WEBPACK",
       link: "https://github.com/Lindo-code",
     },
   ],
   current: [
     {
-      img: "/assets/project-previews/project-preview(personal).jpg",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(personal).jpg",
       title: "FIRST PERSONAL WEBSITE",
       alt: "personal_website_preview",
       repoLink: "https://github.com/Lindo-code/personal_website.git",
@@ -115,7 +115,7 @@ const portfolioContent = {
       tools: ["Javascript", "HTML", "CSS", "CSS Grid", "Flexbox", "Webpack"],
     },
     {
-      img: "/assets/project-previews/project-preview(bullies).jpg",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(bullies).jpg",
       title: "BULLIES TRAINING WEBSITE",
       alt: "bullies_training_website_preview",
       repoLink: "https://github.com/Lindo-code/personal_website.git",
@@ -133,7 +133,7 @@ const portfolioContent = {
       ],
     },
     {
-      img: "/assets/project-previews/project-preview(writer).jpg",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(writer).jpg",
       title: "WRITER WEBSITE",
       alt: "writer_website_preview",
       repoLink: "https://github.com/Lindo-code/writer-website",
@@ -154,7 +154,7 @@ const portfolioContent = {
   ],
   complete: [
     {
-      img: "/assets/project-previews/project-preview(sunny).jpg",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(sunny).jpg",
       title: "SUNNYSIDE AGENCY LANDING PAGE",
       alt: "landing_page_preview",
       repoLink:
@@ -168,7 +168,7 @@ const portfolioContent = {
       tools: ["Javascript", "HTML", "CSS", "CSS Grid", "Flexbox"],
     },
     {
-      img: "/assets/project-previews/project-preview(semitone).jpg",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(semitone).jpg",
       title: "SEMITONE DIFFERENCE",
       alt: "app_preview",
       repoLink:
@@ -189,7 +189,7 @@ const portfolioContent = {
       ],
     },
     {
-      img: "/assets/project-previews/project-preview(memory).jpg",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(memory).jpg",
       title: "MEMORY: CARD GAME",
       alt: "card_game_preview",
       repoLink:
