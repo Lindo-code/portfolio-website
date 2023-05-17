@@ -35,7 +35,7 @@
 
 - [Profile](https://github.com/Lindo-code "Lindo Matabane")
 - [E-mail](mailto:sdrowvieli1@gmail.com?subject=Hi "Hi!")
-- [Website](https://lindo-code.tk/ "Welcome")
+- [Website](https://github.com/Lindo-code/portfolio-website "Welcome")
 
 ## 🤝 Support
 
