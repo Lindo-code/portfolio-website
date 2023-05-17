@@ -18,7 +18,7 @@ const domElements = {
 
 const homeContent = {
   images: {
-    homeSvg: "../assets/undraw/code_thinking.svg",
+    homeSvg: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/undraw/code_thinking.svg",
   },
   links: {
     umuzi: "https://www.umuzi.org",
