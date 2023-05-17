@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lindo Matabane | Portfolio</title>
+    <meta
+      name="description"
+      content="Lindo Matabane's Portfolio Website. View Lindo Matabane's Bio, Tech Skills And Projects."
+    />
+    <meta name="theme-color" content="#1e2839" />
+    <meta name="msapplication-navbutton-color" content="#1e2839" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1e2839" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/lc-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand|Sofia|Railway|Kumbh Sans|Playfair Display|Fraunces|Barlow"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <section>
+        <span id="HOME"></span><span id="PORTFOLIO"></span
+        ><span id="CONTACT"></span>
+      </section>
+      <header class="space-between">
+        <h1 class="title" id="PORTFOLIO">LINDO MATABANE</h1>
+        <nav class="nav-bar" id="CONTACT">
+          <a
+            href="#HOME"
+            class="bold-onclick text-underline"
+            id="text-link"
+            page="home"
+            >HOME</a
+          >
+          <a href="#PORTFOLIO" id="text-link" page="portfolio" class=""
+            >PORTFOLIO</a
+          >
+          <a href="#CONTACT" id="text-link" page="contact" class="">CONTACTS</a>
+        </nav>
+      </header>
+      <main class="main-container">
+        <div class="top-image-container">
+          <h3 class="appear curr-page-title">HOME</h3>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front circle">
+                <div></div>
+              </div>
+              <div class="flip-card-back">
+                <img
+                  src="./assets/portrait.jpg"
+                  alt="self-portrait"
+                  class="portrait"
+                />
+              </div>
+            </div>
+          </div>
+          <br />
+          <a
+            href="https://www.linkedin.com/in/lindo-matabane-8939aa229"
+            class="top-icon appear"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <br />
+        </div>
+        <div class="text-underline-long"></div>
+        <div class="content">
+          <div class="cont appear empty-div"></div>
+          <div class="cont appear empty-div"></div>
+          <div class="cont appear empty-div"></div>
+          <div class="cont appear empty-div"></div>
+          <div class="cont appear empty-div"></div>
+          <div class="cont appear empty-div"></div>
+          <div class="cont appear empty-div"></div>
+          <div class="cont appear empty-div"></div>
+        </div>
+        <div class="email-form-container appear">
+          <h4 class="mailme text-underline">SEND E-MAIL</h4>
+          <form
+            class="mail-me my-form"
+            action="https://formspree.io/f/xoqzdkrk"
+            method="POST"
+            name="email"
+            target="_blank"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Message From Portfolio Site"
+            />
+            <br />
+            <input
+              type="text"
+              name="name"
+              placeholder="First Name"
+              required
+              class="input1"
+            />
+            <br />
+            <input
+              type="text"
+              name="surname"
+              placeholder="Last Name"
+              required
+              class="input1"
+            />
+            <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail Address"
+              required
+              class="input1"
+            />
+            <br />
+            <textarea
+              name="yourMessage"
+              placeholder="Message"
+              required
+              rows="10"
+              cols="30"
+              class="input2"
+            ></textarea>
+            <br />
+            <button type="submit">Submit</button>
+            <p class="my-form-status"></p>
+          </form>
+        </div>
+      </main>
+      <footer class="appear hide">
+        <div class="address-icons-map row">
+          <div class="inline column"></div>
+          <div class="map inline"></div>
+        </div>
+        <div class="icons">
+          <a
+            href="https://github.com/Lindo-code"
+            class="bottom-icons"
+            target="_blank"
+          >
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lindo-matabane-8939aa229"
+            class="bottom-icons"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.freecodecamp.org/fcc44702f65-8d01-4507-9afb-4e03b1dbf7ce"
+            class="bottom-icons"
+            target="_blank"
+          >
+            <i class="fab fa-free-code-camp"></i>
+          </a>
+          <a
+            href="https://gitlab.com/Lindo-code"
+            class="bottom-icons"
+            target="_blank"
+          >
+            <i class="fab fa-gitlab"></i>
+          </a>
+        </div>
+        <div class="foot">
+          <small>
+            ©<span class="year"></span>
+            Lindo Matabane
+          </small>
+        </div>
+      </footer>
+    </div>
+    <script src="./src/objects.js"></script>
+    <script src="./src/page_main.js"></script>
+    <script src="./src/page_home.js"></script>
+    <script src="./src/page_portfolio.js"></script>
+    <script src="./src/page_contact.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
