@@ -259,32 +259,18 @@ nav {
   box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
-.box {
-  z-index:100000;
-  width: 100px;
-  margin: .5px auto;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px;
-  text-align: center;
-  font-weight: 900;
-  color: #fff;
-  font-family: arial;
-  position: absolute;
-  background-blend-mode: darken;
-}
-
-.sb3:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 10px solid rgba(0, 0, 0, 0.6);
-  border-right: 10px solid transparent;
-  border-top: 10px solid rgba(0, 0, 0, 0.6);
-  border-bottom: 10px solid transparent;
-  left: 19px;
-  bottom: -19px;
-  background-blend-mode: darken;
+.portrait-back {
+  display: flex;
+  align-items: center;
+  justify-items: right;
+  justify-content: right;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Kumbh Sans", sans-serif;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  visibility: visible;
 }
 
 /*| SKILLS DIV |*/
@@ -498,6 +484,9 @@ a:hover {
     padding: 10px 50px 10px 50px;
     margin: 40px 20% 0 20%;
     transition: all 0.5s ease;
+  }
+  .portrait-back {
+    font-size: 1em;
   }
   .svg-img {
     width: 60vw;

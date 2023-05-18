@@ -73,7 +73,8 @@ class Main {
   spinPortrait() {
     setTimeout(() => {
       domElements.selfPortrait.classList.toggle(this.animations[1]);
-    }, 2000);
+      domElements.clickPrompt.style.visibility = "hidden";
+    }, 2300);
   }
 
   animateFadeAndDoubleSpin() {
@@ -94,7 +95,7 @@ class Main {
       domElements.show.forEach((element) => {
         element.classList.toggle(this.animations[0]);
       });
-    }, 2200);
+    }, 2300);
   }
 
   handleSubmit(event) {
