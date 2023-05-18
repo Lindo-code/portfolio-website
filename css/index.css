@@ -259,6 +259,20 @@ nav {
   box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
+.portrait-back {
+  display: flex;
+  align-items: center;
+  justify-items: right;
+  justify-content: right;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Kumbh Sans", sans-serif;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  visibility: visible;
+}
+
 /*| SKILLS DIV |*/
 .practice-plat {
   display: flex;
@@ -470,6 +484,9 @@ a:hover {
     padding: 10px 50px 10px 50px;
     margin: 40px 20% 0 20%;
     transition: all 0.5s ease;
+  }
+  .portrait-back {
+    font-size: 1em;
   }
   .svg-img {
     width: 60vw;
