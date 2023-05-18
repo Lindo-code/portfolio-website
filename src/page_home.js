@@ -46,7 +46,10 @@ class HomePage extends Main {
     this.about.container.classList.add(this.createContainer[2][0]);
     this.about.container.classList.remove(this.createContainer[3][0]);
     this.about.container.setAttribute(this.createContainer[3][1], this.page);
-    this.about.container.setAttribute(this.createContainer[3][2], this.createContainer[2][1]);
+    this.about.container.setAttribute(
+      this.createContainer[3][2],
+      this.createContainer[2][1]
+    );
     this.about.introDiv = `
       <img src=${homeContent.images.homeSvg} alt="person_sitting" class="svg-img" />
       <div class="project-details">

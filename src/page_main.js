@@ -3,13 +3,13 @@ class Main {
     this.page = pageName;
     this.isLoad = load;
     this.pages = ["home", "portfolio", "contact"];
-    this.animations = ["fade-in", "rotate"],
-    this.createContainer = [
-      ["projects-container", "block"],
-      ["cards-container", "grid"],
-      ["image-text", "flex"],
-      ["empty-div", "div", "display"]
-    ];
+    (this.animations = ["fade-in", "rotate"]),
+      (this.createContainer = [
+        ["projects-container", "block"],
+        ["cards-container", "grid"],
+        ["image-text", "flex"],
+        ["empty-div", "div", "display"],
+      ]);
   }
 
   findEmptyDiv() {
@@ -36,11 +36,15 @@ class Main {
   checkIfDivExists(name) {
     let divExist = false;
     domElements.divs.forEach((div) => {
-      (name !== undefined && div.getAttribute(this.createContainer[3][1]) === name[0]) ||
-      (name !== undefined && div.getAttribute(this.createContainer[3][1]) === name[1]) ||
-      (name !== undefined && div.getAttribute(this.createContainer[3][1]) === name[2])
+      (name !== undefined &&
+        div.getAttribute(this.createContainer[3][1]) === name[0]) ||
+      (name !== undefined &&
+        div.getAttribute(this.createContainer[3][1]) === name[1]) ||
+      (name !== undefined &&
+        div.getAttribute(this.createContainer[3][1]) === name[2])
         ? (divExist = true)
-        : typeof name === "string" && div.getAttribute(this.createContainer[3][1]) === name
+        : typeof name === "string" &&
+          div.getAttribute(this.createContainer[3][1]) === name
         ? (divExist = true)
         : (divExist = divExist);
     });
@@ -73,8 +77,19 @@ class Main {
   spinPortrait() {
     setTimeout(() => {
       domElements.selfPortrait.classList.toggle(this.animations[1]);
-      domElements.clickPrompt.style.visibility = "hidden";
-    }, 2300);
+    }, 2000);
+  }
+
+  animateBubbleFadeIn() {
+    setTimeout(() => {
+      domElements.clickPrompt.classList.toggle("show-bubble");
+    }, 1000);
+  }
+
+  animateBubbleFadeOut() {
+    setTimeout(() => {
+      domElements.clickPrompt.classList.toggle("show-bubble");
+    }, 7000);
   }
 
   animateFadeAndDoubleSpin() {

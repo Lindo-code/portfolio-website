@@ -12,14 +12,15 @@ const domElements = {
   content: document.querySelector(".content"),
   form: document.querySelector(".my-form"),
   status: document.querySelector(".my-form-status"),
-  clickPrompt: document.querySelector(".portrait-back")
+  clickPrompt: document.querySelector(".box"),
 };
 
 /*-------------------------| HOME |------------------------*/
 
 const homeContent = {
   images: {
-    homeSvg: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/undraw/code_thinking.svg",
+    homeSvg:
+      "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/undraw/code_thinking.svg",
   },
   links: {
     umuzi: "https://www.umuzi.org",
@@ -172,8 +173,7 @@ const portfolioContent = {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(semitone).jpg",
       title: "SEMITONE DIFFERENCE",
       alt: "app_preview",
-      repoLink:
-        "https://github.com/Lindo-code",
+      repoLink: "https://github.com/Lindo-code",
       link: null,
       objectives: [
         "Create Semitone Difference App",
@@ -193,8 +193,7 @@ const portfolioContent = {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(memory).jpg",
       title: "MEMORY: CARD GAME",
       alt: "card_game_preview",
-      repoLink:
-        "https://github.com/Lindo-code",
+      repoLink: "https://github.com/Lindo-code",
       link: null,
       objectives: [
         "Create Memory Game Web App",
