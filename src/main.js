@@ -10,6 +10,8 @@ window.onload = () => {
   home.animateRedLine();
   home.spinPortrait();
   home.createAndPopulateDiv();
+  home.animateBubbleFadeIn();
+  home.animateBubbleFadeOut();
   home.showAll();
 };
 

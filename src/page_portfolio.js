@@ -48,8 +48,13 @@ class PortfolioPage extends Main {
     this.projects.container[this.projects.temp].classList.add(
       this.createContainer[0][0]
     );
-    this.projects.container[this.projects.temp].classList.remove(this.createContainer[3][0]);
-    this.projects.container[this.projects.temp].setAttribute(this.createContainer[3][1], this.page);
+    this.projects.container[this.projects.temp].classList.remove(
+      this.createContainer[3][0]
+    );
+    this.projects.container[this.projects.temp].setAttribute(
+      this.createContainer[3][1],
+      this.page
+    );
     this.projects.container[this.projects.temp].setAttribute(
       this.createContainer[3][2],
       this.createContainer[0][1]
@@ -123,12 +128,17 @@ class PortfolioPage extends Main {
   createTitleContainer() {
     this.headings.container[this.headings.temp] = this.findEmptyDiv();
     this.headings.container[this.headings.temp].classList.add("heading");
-    this.headings.container[this.headings.temp].classList.remove(this.createContainer[3][0]);
+    this.headings.container[this.headings.temp].classList.remove(
+      this.createContainer[3][0]
+    );
     this.headings.container[this.headings.temp].setAttribute(
       this.createContainer[3][1],
       this.page
     );
-    this.headings.container[this.headings.temp].setAttribute(this.createContainer[3][2], "flex");
+    this.headings.container[this.headings.temp].setAttribute(
+      this.createContainer[3][2],
+      "flex"
+    );
     this.headings[this.headings.temp] = `<h4 class="text-underline">${
       portfolioContent.strings.portfolioCategories[this.headings.temp]
     }</h4>`;
@@ -138,7 +148,10 @@ class PortfolioPage extends Main {
     this.cards.cardsContainer = this.findEmptyDiv();
     this.cards.cardsContainer.classList.add(this.createContainer[1][0]);
     this.cards.cardsContainer.classList.remove(this.createContainer[3][0]);
-    this.cards.cardsContainer.setAttribute(this.createContainer[3][1], this.page);
+    this.cards.cardsContainer.setAttribute(
+      this.createContainer[3][1],
+      this.page
+    );
     this.cards.cardsContainer.setAttribute(
       this.createContainer[3][2],
       this.createContainer[1][1]
