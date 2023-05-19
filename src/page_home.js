@@ -53,11 +53,18 @@ class HomePage extends Main {
     this.about.introDiv = `
       <img src=${homeContent.images.homeSvg} alt="person_sitting" class="svg-img" />
       <div class="project-details">
-        <h4 class="text-underline"> ${homeContent.text.headingIntro[0][0]} </h4>
+        <h4 class="text-underline"> ${homeContent.text.headingIntro[0]} </h4>
         <p style="text-align: left;" class="type-writer">
           ${homeContent.text.intro[0][0]}
           <br><br>
           ${homeContent.text.intro[1][0]}
+          <br><br>
+        </p>
+        <h4 class="text-underline"> ${homeContent.text.headingIntro[1]} </h4>
+        <p style="text-align: left;" class="type-writer">
+          ${homeContent.text.interests[0][0]}
+          <br><br>
+          ${homeContent.text.interests[1][0]}
           <br><br>
         </p>
         <a href=${homeContent.links.umuzi} id="deco" target="_blank"> Umuzi.org</a>

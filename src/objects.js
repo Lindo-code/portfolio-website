@@ -26,13 +26,21 @@ const homeContent = {
     umuzi: "https://www.umuzi.org",
   },
   text: {
-    headingIntro: [["WHO AM I?"]],
+    headingIntro: ["WHO AM I?", "INTERESTS & HOBBIES"],
     intro: [
       [
         "I'm an aspiring web-developer and all-round programmer, who's currently learning javascript for front-end web development and node for back-end web development, with the goal of becoming a full-stack web developer.",
       ],
       [
         "As someone who is highly focused and attentive to detail, I am always keen on giving each project I work on it's own unique design and even though I tend to lean more towards the design aspect of coding I'm able to appreciate the functionality that backend can offer to enhance any project.",
+      ],
+    ],
+    interests: [
+      [
+        "Lately I've developed an interest in design thinking methodologies and exploring software design patterns to enhance software architecture and create elegant solutions that encourage good group cohesion while addressing user needs.",
+      ],
+      [
+        "When not coding I spend my time reading, improving my writing skills by writing fictional works of my own, watching anime, listening to podcasts and generally just soaking in anything that piques my interest at the time.",
       ],
     ],
   },
@@ -120,7 +128,7 @@ const portfolioContent = {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(bullies).jpg",
       title: "BULLIES TRAINING WEBSITE",
       alt: "bullies_training_website_preview",
-      repoLink: "https://github.com/Lindo-code/personal_website.git",
+      repoLink: "https://github.com/Lindo-code/Bulliestraining.git",
       link: null,
       objectives: [
         "Revamp bullies training website",
