@@ -123,6 +123,8 @@ h5 {
 }
 
 .svg-img {
+  display: flex;
+  align-self: center;
   width: 30vw;
   height: 21vw;
   border-radius: 10px;
@@ -451,6 +453,9 @@ a:hover {
   }
   .image-text {
     margin-top: 6em;
+  }
+  .svg-img {
+    margin: 5em;
   }
 }
 
