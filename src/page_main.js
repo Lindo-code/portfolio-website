@@ -2,7 +2,7 @@ class Main {
   constructor(pageName, load) {
     this.page = pageName;
     this.isLoad = load;
-    this.pages = ["home", "portfolio", "contact"];
+    this.pages = ["about", "portfolio", "contact"];
     (this.animations = ["fade-in", "rotate"]),
       (this.createContainer = [
         ["projects-container", "block"],
