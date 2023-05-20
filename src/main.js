@@ -1,4 +1,4 @@
-const home = new HomePage("home", true);
+const home = new HomePage("about", true);
 const portfolio = new PortfolioPage("portfolio", false);
 const contact = new ContactPage("contact", false);
 
@@ -18,7 +18,7 @@ window.onload = () => {
 domElements.textLinks.forEach((navLink) => {
   navLink.addEventListener("click", () => {
     const url = navLink.getAttribute("id");
-    if (url === "home") {
+    if (url === "about") {
       home.isLoad = false;
       home.createAndPopulateDiv();
     }
