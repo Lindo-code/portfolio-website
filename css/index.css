@@ -316,29 +316,27 @@ nav {
 }
 .mail-me {
   grid-area: contact;
-  background: rgba(0, 0, 0, 0.4) url("../assets/background/BG7.svg");
+  background: rgba(0, 0, 0, 0.4);
   max-height: fit-content;
   max-width: 90vw;
-  border: 2px solid white;
+  /* border: 1px solid white; */
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
   padding: 20px;
-  font-family: Monospace;
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 1.3rem;
-  font-weight: bold;
   color: white;
 }
 .input1 {
-  color: cyan hsl(183, 100%, 15%);
-  background: hsl(185, 41%, 84%);
+  color:  hsl(183, 100%, 15%);
+  background: white;
   border-radius: 3px;
-  border: solid 1px hsl(172, 67%, 45%);
+  border: solid 1px black;
   font-size: 20px;
-  font-family: Monospace;
-  font-weight: bold;
+  font-family: "Kumbh Sans", sans-serif;
   padding: 1px;
   text-align: left;
   height: 1.5em;
@@ -346,18 +344,30 @@ nav {
   margin: 10px;
 }
 .input2 {
-  color: cyan hsl(183, 100%, 15%);
-  background: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  background: white;
   border-radius: 3px;
-  border: solid 1px hsl(172, 67%, 45%);
+  border: solid 1px black;
   font-size: 20px;
-  font-family: Monospace;
-  font-weight: bold;
+  font-family: "Kumbh Sans", sans-serif;
   padding: 1px;
   text-align: left;
   max-width: 60vw;
 }
-
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+.submit-btn {
+  border-radius: 3px;
+  border: solid 1px black;
+  margin-top: 1.5em;
+  font-size: .8em;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.submit-btn:active {
+  transform: scale(0.9);
+}
 /*| FOOTER |*/
 footer {
   opacity: 0;
