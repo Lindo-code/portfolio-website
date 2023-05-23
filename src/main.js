@@ -12,11 +12,14 @@ window.onload = () => {
   home.spinPortrait();
   home.createAndPopulateDiv();
   home.animateBubbleFadeIn();
-  home.animateBubbleFadeOut();
   home.showAll();
 };
 
 window.onscroll = () => {
+  if (homeContent.isNotScroll) {
+    homeContent.isNotScroll = false;
+    home.animateBubbleFadeOut();
+  }
   if (window.pageYOffset > currStickyPos) {
     domElements.stickyElem.style.position = "fixed";
     domElements.stickyElem.style.top = "0px";
@@ -36,9 +39,17 @@ domElements.textLinks.forEach((navLink) => {
       home.createAndPopulateDiv();
     }
     if (url === "portfolio") {
+      if (homeContent.isNotScroll) {
+        homeContent.isNotScroll = false;
+        home.animateBubbleFadeOut();
+      }
       portfolio.createAndPopulateDiv();
     }
     if (url === "contact") {
+      if (homeContent.isNotScroll) {
+        homeContent.isNotScroll = false;
+        home.animateBubbleFadeOut();
+      }
       contact.createAndPopulateDiv();
     }
   });

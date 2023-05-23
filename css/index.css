@@ -421,6 +421,9 @@ a:hover {
     transition: all 0.5s ease;
     z-index: 1666;
   }
+  .sticky-div {
+    padding: 0px;
+  }
   .title {
     transition: all 0.5s ease;
   }

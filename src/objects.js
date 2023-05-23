@@ -19,6 +19,7 @@ const domElements = {
 /*-------------------------| HOME |------------------------*/
 
 const homeContent = {
+  isNotScroll: true,
   images: {
     homeSvg:
       "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/undraw/code_thinking.svg",
