@@ -32,18 +32,18 @@ const homeContent = {
     headingIntro: ["WHO AM I?", "INTERESTS & HOBBIES"],
     intro: [
       [
-        "I'm an aspiring web-developer and all-round programmer, who's currently learning javascript for front-end web development and node for back-end web development, with the goal of becoming a full-stack web developer.",
+        "I'm an aspiring web developer and all-round programmer, who's currently learning javascript for front-end web development and node for back-end web development, with the goal of becoming a full-stack web developer.",
       ],
       [
-        "As someone who is highly focused and attentive to detail, I am always keen on giving each project I work on it's own unique design and even though I tend to lean more towards the design aspect of coding I'm able to appreciate the functionality that backend can offer to enhance any project.",
+        "As someone who is highly focused and attentive to detail, I am always keen on giving each project I work on its own unique design, and even though I tend to lean more toward the design aspect of coding I'm able to appreciate the functionality that backend can offer to enhance any project.",
       ],
     ],
     interests: [
       [
-        "Lately I've developed an interest in design thinking methodologies and exploring software design patterns to enhance software architecture and create elegant solutions that encourage good group cohesion while addressing user needs.",
+        "Lately, I've developed an interest in design thinking methodologies and exploring software design patterns to enhance software architecture and create elegant solutions that encourage good group cohesion while addressing user needs.",
       ],
       [
-        "When not coding I spend my time reading, improving my writing skills by writing fictional works of my own, watching anime, listening to podcasts and generally just soaking in anything that piques my interest at the time.",
+        " When not coding I spend my time reading, improving my writing skills by writing fictional works of my own, watching anime, listening to podcasts, and generally just soaking in anything that piques my interest at the time.",
       ],
     ],
   },
