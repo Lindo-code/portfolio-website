@@ -31,12 +31,15 @@ window.onscroll = () => {
   }
 };
 
-domElements.currVitae.addEventListener("click", () => {
-  if (homeContent.isNotScroll) {
-    homeContent.isNotScroll = false;
-    home.animateBubbleFadeOut();
-  }
+domElements.imageDivLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (homeContent.isNotScroll) {
+      homeContent.isNotScroll = false;
+      home.animateBubbleFadeOut();
+    }
+  })
 })
+
 domElements.textLinks.forEach((navLink) => {
   navLink.addEventListener("click", () => {
     const url = navLink.getAttribute("id");
