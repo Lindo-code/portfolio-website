@@ -383,6 +383,9 @@ a:hover {
   .top-image-container {
     margin: 40px 20% 0 20%;
   }
+  .top-icon {
+    font-size: 1.5rem;
+  }
   .portrait {
     width: 230px;
     height: 230px;
@@ -426,6 +429,8 @@ a:hover {
     z-index: 1666;
   }
   .sticky-div {
+    right: auto;
+    left:auto;
     padding: 0px;
   }
   .title {
@@ -660,7 +665,7 @@ a:hover {
   font-family: arial;
   position: absolute;
   background-blend-mode: darken;
-  animation-delay: 2.6s;
+  animation-delay: 2.4s;
 }
 
 .sb3:before {
