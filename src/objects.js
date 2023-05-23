@@ -14,7 +14,7 @@ const domElements = {
   status: document.querySelector(".my-form-status"),
   clickPrompt: document.querySelector(".box"),
   stickyElem: document.querySelector(".sticky-div"),
-  currVitae: document.querySelector(".curriculum-vitae"),
+  imageDivLinks: document.querySelectorAll(".top-image-link"),
 };
 
 /*-------------------------| HOME |------------------------*/
