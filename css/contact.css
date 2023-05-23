@@ -38,6 +38,8 @@
   color: white;
 }
 .input1 {
+  display: flex;
+  justify-self: center;
   color:  hsl(183, 100%, 15%);
   background: white;
   border-radius: 3px;
@@ -47,10 +49,12 @@
   padding: 1px;
   text-align: left;
   height: 1.5em;
-  max-width: 50vw;
+  width: 95%;
   margin: 10px;
 }
 .input2 {
+  display: flex;
+  justify-self: center;
   color: hsl(183, 100%, 15%);
   background: white;
   border-radius: 3px;
@@ -59,7 +63,8 @@
   font-family: "Kumbh Sans", sans-serif;
   padding: 1px;
   text-align: left;
-  max-width: 60vw;
+  width: 95%;
+  margin: 10px;
 }
 .submit-button {
   display: flex;
