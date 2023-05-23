@@ -1,6 +1,7 @@
 const home = new HomePage("about", true);
 const portfolio = new PortfolioPage("portfolio", false);
 const contact = new ContactPage("contact", false);
+const currStickyPos = domElements.stickyElem.getBoundingClientRect().top + window.pageYOffset;
 
 window.onload = () => {
   home.copyright();
@@ -13,6 +14,18 @@ window.onload = () => {
   home.animateBubbleFadeIn();
   home.animateBubbleFadeOut();
   home.showAll();
+};
+
+window.onscroll = () => {
+  if (window.pageYOffset > currStickyPos) {
+    domElements.stickyElem.style.position = "fixed";
+    domElements.stickyElem.style.top = "0px";
+    domElements.stickyElem.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  } else {
+    domElements.stickyElem.style.position = "relative";
+    domElements.stickyElem.style.top = "initial";
+    domElements.stickyElem.style.backgroundColor = "rgba(0, 0, 0, 0)";
+  }
 };
 
 domElements.textLinks.forEach((navLink) => {

@@ -216,13 +216,23 @@ header {
   color: white;
   font-size: 2rem;
 }
-
+.sticky-div {
+  background: rgba(0, 0, 0, 0);
+  position: relative;
+  top: 0px;
+  right: 0px;
+  border-radius: 15px;
+  padding: 10px 0px;
+  background-blend-mode: darken;
+}
 nav {
   opacity: 0;
   display: flex;
+  position: absolute;
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
+  z-index: 2000;
 }
 
 .top-icon {

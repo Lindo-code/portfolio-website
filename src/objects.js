@@ -13,6 +13,7 @@ const domElements = {
   form: document.querySelector(".my-form"),
   status: document.querySelector(".my-form-status"),
   clickPrompt: document.querySelector(".box"),
+  stickyElem: document.querySelector(".sticky-div"),
 };
 
 /*-------------------------| HOME |------------------------*/
