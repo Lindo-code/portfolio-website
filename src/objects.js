@@ -13,11 +13,13 @@ const domElements = {
   form: document.querySelector(".my-form"),
   status: document.querySelector(".my-form-status"),
   clickPrompt: document.querySelector(".box"),
+  stickyElem: document.querySelector(".sticky-div"),
 };
 
 /*-------------------------| HOME |------------------------*/
 
 const homeContent = {
+  isNotScroll: true,
   images: {
     homeSvg:
       "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/undraw/code_thinking.svg",

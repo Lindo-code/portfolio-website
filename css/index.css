@@ -216,18 +216,28 @@ header {
   color: white;
   font-size: 2rem;
 }
-
+.sticky-div {
+  background: rgba(0, 0, 0, 0);
+  position: relative;
+  top: 0px;
+  right: 0px;
+  border-radius: 15px;
+  padding: 10px 0px;
+  background-blend-mode: darken;
+}
 nav {
   opacity: 0;
   display: flex;
+  position: absolute;
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
+  z-index: 2000;
 }
 
 .top-icon {
   opacity: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: white;
   text-decoration: none;
 }
@@ -288,7 +298,7 @@ nav {
   background-color: #ffdead;
   border-radius: 15px;
   margin: 5em;
-  padding: 10vw;
+  padding: 12vw;
 }
 
 /*| FOOTER |*/
@@ -373,6 +383,9 @@ a:hover {
   .top-image-container {
     margin: 40px 20% 0 20%;
   }
+  .top-icon {
+    font-size: 1.5rem;
+  }
   .portrait {
     width: 230px;
     height: 230px;
@@ -389,6 +402,10 @@ a:hover {
   }
   .svg-img {
     margin: 5em;
+  }
+  .img-text  {
+    margin-right: 10em;
+    margin-left: 10em;
   }
 }
 
@@ -410,6 +427,11 @@ a:hover {
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1666;
+  }
+  .sticky-div {
+    right: auto;
+    left:auto;
+    padding: 0px;
   }
   .title {
     transition: all 0.5s ease;
@@ -643,7 +665,7 @@ a:hover {
   font-family: arial;
   position: absolute;
   background-blend-mode: darken;
-  animation-delay: 2.6s;
+  animation-delay: 2.4s;
 }
 
 .sb3:before {

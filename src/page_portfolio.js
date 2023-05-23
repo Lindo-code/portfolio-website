@@ -86,7 +86,7 @@ class PortfolioPage extends Main {
                   ${this.addIcon(projects[i])}
               </div>
           </div>
-        </div><br><br>`;
+        </div><br><br><br>`;
     }
     return projectsDiv;
   }
