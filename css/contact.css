@@ -1,22 +1,15 @@
 .email-form-container {
   opacity: 0;
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
-  grid-template-areas:
-    "msg"
-    "contact"
-    "foot";
-  justify-items: center;
-  justify-content: center;
+  grid-template: auto / auto;
+  grid-template-areas: "msg" "contact" "foot";
+  place-items: center;
   margin-top: 4em;
 }
 
 .mail {
   grid-area: msg;
-  justify-content: center;
   justify-self: center;
-  justify-items: center;
   text-align: center;
   color: white;
 }
@@ -27,13 +20,10 @@
   max-height: fit-content;
   max-width: 90vw;
   border-radius: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: center cover no-repeat;
   background-blend-mode: darken;
   padding: 20px;
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 1.3rem;
+  font: 1.3rem "Kumbh Sans", sans-serif;
   color: white;
 }
 
@@ -53,6 +43,10 @@
   margin: 10px;
 }
 
+.input1 {
+  height: 1.5em;
+}
+
 .submit-button {
   display: flex;
   justify-content: center;
@@ -62,7 +56,7 @@
   border-radius: 3px;
   border: solid 1px black;
   margin-top: 1.5em;
-  font-size: .8em;
+  font-size: 0.8em;
   font-family: "Kumbh Sans", sans-serif;
 }
 
@@ -73,6 +67,7 @@
 @media screen and (max-width: 968px) {
   .bottom-icons {
     font-size: 1em;
-  } 
+  }
 }
+
 
