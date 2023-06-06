@@ -110,7 +110,7 @@ class Main {
       });
     }, 2300);
   }
-
+  
   handleSubmit(event) {
     event.preventDefault();
     const data = new FormData(event.target);
