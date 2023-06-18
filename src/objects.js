@@ -12,7 +12,7 @@ const domElements = {
   content: document.querySelector(".content"),
   form: document.querySelector(".my-form"),
   status: document.querySelector(".my-form-status"),
-  clickPrompt: document.querySelector(".box"),
+  clickPrompt: document.querySelector("#myPopup"),
   stickyElem: document.querySelector(".sticky-div"),
   imageDivLinks: document.querySelectorAll(".top-image-link"),
 };

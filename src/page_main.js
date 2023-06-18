@@ -82,12 +82,12 @@ class Main {
 
   animateBubbleFadeIn() {
     setTimeout(() => {
-      domElements.clickPrompt.classList.toggle("show-bubble");
-    }, 1000);
+      domElements.clickPrompt.classList.toggle("show");
+    }, 3500);
   }
 
   animateBubbleFadeOut() {
-      domElements.clickPrompt.classList.toggle("show-bubble");
+      domElements.clickPrompt.classList.toggle("show");
   }
 
   animateFadeAndDoubleSpin() {

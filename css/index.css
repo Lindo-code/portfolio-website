@@ -407,6 +407,12 @@ a:hover {
     margin-right: 10em;
     margin-left: 10em;
   }
+  .popup .popuptext {
+    margin-bottom: -1em;
+  }
+  .popup .popuptext::after {
+    margin-bottom: -1em;
+  }
 }
 
 @media screen and (max-width: 968px) {
@@ -469,6 +475,12 @@ a:hover {
   .project-details {
     padding: 1em;
     margin: 1em;
+  }
+  .popup .popuptext {
+    margin-bottom: -1.5em;
+  }
+  .popup .popuptext::after {
+    margin-bottom: -1.5em;
   }
 }
 
@@ -638,11 +650,7 @@ a:hover {
   -webkit-animation: fade-in 2s linear forwards;
   animation: fade-in 2s linear forwards;
 }
-.show-bubble {
-  -moz-animation: fade-in 1s linear forwards;
-  -webkit-animation: fade-in 1s linear forwards;
-  animation: fade-in 1s linear forwards;
-}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -651,35 +659,61 @@ a:hover {
     opacity: 1;
   }
 }
-.box {
-  opacity: 0;
-  border-radius: 5px;
-  z-index:100000;
-  width: 100px;
-  margin: .5px auto;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  text-align: center;
-  font-weight: 900;
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Kumbh Sans", sans-serif;
+  z-index: 50000;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
-  font-family: arial;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
   position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
   background-blend-mode: darken;
-  animation-delay: 2.4s;
 }
 
-.sb3:before {
+.popup .popuptext::after {
   content: "";
-  width: 0px;
-  height: 0px;
   position: absolute;
-  border-left: 10px solid rgba(0, 0, 0, 0.7);
-  border-right: 10px solid transparent;
-  border-top: 10px solid rgba(0, 0, 0, 0.7);
-  border-bottom: 10px solid transparent;
-  left: 19px;
-  bottom: -19px;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
   background-blend-mode: darken;
 }
 
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 2s ease forwards;
+  -webkit-animation: fadeIn 2s ease forwards;
+  animation: fadeIn 2s ease forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 /*---------------| END ANIMATE |---------------*/
