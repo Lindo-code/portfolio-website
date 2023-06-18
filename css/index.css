@@ -1,4 +1,4 @@
-/*| B0DY & CONTAINER(WRAPPER) |*/
+/*----------------------------------------------------| B0DY & CONTAINER(WRAPPER) |----------------------------------------------------*/
 * {
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-/*| GENERAL |*/
+/*--------------------------------------------------------------| GENERAL |--------------------------------------------------------*/
 .bottom-icon {
   opacity: 0;
   font-size: 1.2rem;
@@ -179,7 +179,7 @@ input[type="checkbox"]:checked + label:before {
   line-height: 15px;
 }
 
-/*| RE-USABLE CODE FOR FLEX DIVS |*/
+/*------------------------------------------------| RE-USABLE CODE FOR FLEX DIVS |------------------------------------------------*/
 .row {
   display: flex;
   flex-direction: row;
@@ -204,7 +204,7 @@ input[type="checkbox"]:checked + label:before {
   flex-direction: row;
 }
 
-/*| HEADER |*/
+/*-----------------------------------------------------------| HEADER |------------------------------------------------------------*/
 header {
   padding: 1em;
 }
@@ -242,9 +242,7 @@ nav {
   text-decoration: none;
 }
 
-/*| MAIN |*/
-
-/*| TOP IMAGE DIV |*/
+/*---------------------------------------------------------------| TOP IMAGE DIV |-----------------------------------------------------*/
 .top-image-container {
   opacity: 0;
   display: flex;
@@ -285,13 +283,13 @@ nav {
   visibility: visible;
 }
 
-/*| SKILLS DIV |*/
+/*--------------------------------------------------| SKILLS DIV |-----------------------------------------------------------------------*/
 .practice-plat {
   display: flex;
   justify-content: space-around;
 }
 
-/*| CURRENT & COMPLETED PROJECTS|*/
+/*-------------------------------------------| CURRENT & COMPLETED PROJECTS|-------------------------------------------------------------*/
 .projects-container {
   opacity: 0;
   display: block;
@@ -301,7 +299,7 @@ nav {
   padding: 12vw;
 }
 
-/*| FOOTER |*/
+/*----------------------------------------------------| FOOTER |-----------------------------------------------------------------------*/
 footer {
   opacity: 0;
   display: block;
@@ -375,7 +373,7 @@ a:hover {
   background-color: #ff847c;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
-
+/*--------------------------------------------------|RESPONSIVENESS|-----------------------------------------------------------------*/
 @media screen and (min-width: 1025px) {
   a {
     font-size: 1em;
@@ -403,7 +401,7 @@ a:hover {
   .svg-img {
     margin: 5em;
   }
-  .img-text  {
+  .img-text {
     margin-right: 10em;
     margin-left: 10em;
   }
@@ -436,7 +434,7 @@ a:hover {
   }
   .sticky-div {
     right: auto;
-    left:auto;
+    left: auto;
     padding: 0px;
   }
   .title {
@@ -484,7 +482,7 @@ a:hover {
   }
 }
 
-/*---------------| ANIMATE |---------------*/
+/*------------------------------------------------------------| ANIMATE |---------------------------------------------------------------*/
 
 .title {
   margin-left: -8em;

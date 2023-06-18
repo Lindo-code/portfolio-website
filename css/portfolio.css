@@ -1,5 +1,4 @@
-/*| GENERAL |*/
-
+/*-------------------------------------------------------| GENERAL |-----------------------------------------------------------*/
 .all-project-details {
   display: flex;
   flex-direction: column;
@@ -38,7 +37,7 @@ h4.color {
   box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.5);
 }
 
-/*| RE-USABLE CODE FOR FLEX DIVS |*/
+/*----------------------------------------------------| RE-USABLE CODE FOR FLEX DIVS |-----------------------------------------------*/
 .row {
   display: flex;
   flex-direction: row;
@@ -62,8 +61,7 @@ h4.color {
   flex-direction: row;
 }
 
-/*| MAIN |*/
-/*| SKILLS DIV |*/
+/*----------------------------------------------------------------| SKILLS DIV |-----------------------------------------------------*/
 .cards-container {
   opacity: 0;
   display: grid;
@@ -90,7 +88,7 @@ h4.color {
   background-color: #2f4f4f;
 }
 
-/*| CURRENT & COMPLETED PROJECTS|*/
+/*------------------------------------------------------------| CURRENT & COMPLETED PROJECTS|------------------------------------------*/
 .projects-container {
   opacity: 0;
   display: block;
@@ -99,10 +97,6 @@ h4.color {
   margin: 5em;
   padding: 6vw;
 }
-
-/*| FORM |*/
-
-/*| FOOTER |*/
 
 .card:hover, .project-img:hover, .project-img:active  {
   animation: resize.5s forwards;
@@ -117,6 +111,7 @@ h4.color {
   }
 }
 
+/*----------------------------------------------------|RESPONSIVENESS|---------------------------------------------------*/
 @media screen and (min-width: 1025px) {}
 
 @media screen and (max-width: 968px) {
@@ -144,3 +139,4 @@ h4.color {
     padding: 2em 1vw 2em 1vw;
   }
 }
+
