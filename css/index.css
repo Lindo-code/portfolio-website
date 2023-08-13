@@ -251,8 +251,8 @@ nav {
   border-radius: 10px;
   background-color: #ff847c;
   padding: 10px 50px 10px 50px;
-  margin-left: 6em;
-  margin-right: 6em;
+  margin-left: 8em;
+  margin-right: 8em;
 }
 
 .top-image-container h3 {
@@ -446,7 +446,7 @@ a:hover {
   }
   .top-image-container {
     padding: 10px 50px 10px 50px;
-    margin: 40px 20% 0 20%;
+    margin: 0px 20% 0 20%;
     transition: all 0.5s ease;
   }
   .portrait-back {
