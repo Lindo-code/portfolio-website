@@ -212,7 +212,7 @@ header {
 .title {
   opacity: 0;
   font-weight: normal;
-  font-family: "Playfair Display", Times New Roman;
+  font-family: "Playfair Display", 'Times New Roman';
   color: white;
   font-size: 2rem;
 }
@@ -426,7 +426,7 @@ a:hover {
     justify-content: center;
     font-size: 1.1rem;
     margin: 0;
-    padding: 50px;
+    padding: 5em;
     width: 99%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -445,7 +445,7 @@ a:hover {
     z-index: 18000;
   }
   .top-image-container {
-    padding: 10px 50px 10px 50px;
+    padding: 10px 5em 10px 5em;
     margin: 0px 20% 0 20%;
     transition: all 0.5s ease;
   }
