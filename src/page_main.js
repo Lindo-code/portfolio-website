@@ -71,7 +71,7 @@ class Main {
 
   animateRedLine() {
     domElements.redLine.style.opacity = 1;
-    domElements.redLine.style.margin = "1em 10% 1em 10%";
+    domElements.redLine.style.margin = "1em 12% 1em 12%";
   }
 
   spinPortrait() {
