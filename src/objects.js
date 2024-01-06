@@ -116,7 +116,7 @@ const portfolioContent = {
   ],
   current: [
     {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-infiltration1.jpg",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-infiltration2.jpg",
       title: "INFILTRATION COUNTDOWN",
       alt: "infiltration_countdown_preview",
       repoLink: null,
@@ -150,19 +150,6 @@ const portfolioContent = {
   ],
   complete: [
     {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-recipe1.jpg",
-      title: "RECIPE SEARCH APP",
-      alt: "recipe_search_app_preview",
-      repoLink: null,
-      link: "https://lindo-code-recipe-search-app.netlify.app/",
-      objectives: [
-        "Create Recipe Search App",
-        "Host as webpage on Github Pages",
-        "Publish Recipe Search App",
-      ],
-      tools: ["React", "Redux", "Javascript", "HTML", "CSS", "Material UI"],
-    },
-    {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(semitone).jpg",
       title: "SEMITONE DIFFERENCE",
       alt: "app_preview",
@@ -181,6 +168,19 @@ const portfolioContent = {
         "Jasmine",
         "Webpack",
       ],
+    },
+    {
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-recipe1.jpg",
+      title: "RECIPE SEARCH APP",
+      alt: "recipe_search_app_preview",
+      repoLink: null,
+      link: "https://lindo-code-recipe-search-app.netlify.app/",
+      objectives: [
+        "Create Recipe Search App",
+        "Host as webpage on Github Pages",
+        "Publish Recipe Search App",
+      ],
+      tools: ["React", "Redux", "Javascript", "HTML", "CSS", "Material UI"],
     },
     {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-mem-react.jpg",
@@ -204,7 +204,7 @@ const portfolioContent = {
       link: "https://lindo-code.github.io/sunnyside-agency-landing-page-main/",
       objectives: [
         "Create website landing page",
-        "Host as webpage on Github Pages",
+        "Host Page on Github",
         "Publish Landing Page",
       ],
       tools: ["Javascript", "HTML", "CSS", "CSS Grid", "Flexbox"],
