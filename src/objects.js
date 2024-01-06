@@ -116,17 +116,17 @@ const portfolioContent = {
   ],
   current: [
     {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-mem-react.jpg",
-      title: "MEMORY: CARD GAME",
-      alt: "card_game_preview",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-infiltration1.jpg",
+      title: "INFILTRATION COUNTDOWN",
+      alt: "infiltration_countdown_preview",
       repoLink: null,
-      link: "https://lindo-code-memory-game.netlify.app/",
+      link: "https://lindo-code-infiltration-countdown.netlify.app/",
       objectives: [
-        "Create Memory Game Web App",
-        "Host App on Github Pages",
-        "Publish App",
+        "Create Game",
+        "Host Game on Github Pages",
+        "Publish Game",
       ],
-      tools: ["React", "Redux", "Javascript", "HTML", "CSS"],
+      tools: ["React", "Redux", "Javascript", "HTML", "CSS", "Flexbox"],
     },
     {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(writer).jpg",
@@ -150,18 +150,17 @@ const portfolioContent = {
   ],
   complete: [
     {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(sunny).jpg",
-      title: "SUNNYSIDE AGENCY LANDING PAGE",
-      alt: "landing_page_preview",
-      repoLink:
-        "https://github.com/Lindo-code/sunnyside-agency-landing-page-main",
-      link: "https://lindo-code.github.io/sunnyside-agency-landing-page-main/",
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-recipe1.jpg",
+      title: "RECIPE SEARCH APP",
+      alt: "recipe_search_app_preview",
+      repoLink: null,
+      link: "https://lindo-code-recipe-search-app.netlify.app/",
       objectives: [
-        "Create website landing page",
+        "Create Recipe Search App",
         "Host as webpage on Github Pages",
-        "Publish Landing Page",
+        "Publish Recipe Search App",
       ],
-      tools: ["Javascript", "HTML", "CSS", "CSS Grid", "Flexbox"],
+      tools: ["React", "Redux", "Javascript", "HTML", "CSS", "Material UI"],
     },
     {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(semitone).jpg",
@@ -182,6 +181,33 @@ const portfolioContent = {
         "Jasmine",
         "Webpack",
       ],
+    },
+    {
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-mem-react.jpg",
+      title: "MEMORY: CARD GAME",
+      alt: "card_game_preview",
+      repoLink: null,
+      link: "https://lindo-code-memory-game.netlify.app/",
+      objectives: [
+        "Create Memory Game Web App",
+        "Host App on Github Pages",
+        "Publish App",
+      ],
+      tools: ["React", "Redux", "Javascript", "HTML", "CSS"],
+    },
+    {
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(sunny).jpg",
+      title: "SUNNYSIDE AGENCY LANDING PAGE",
+      alt: "landing_page_preview",
+      repoLink:
+        "https://github.com/Lindo-code/sunnyside-agency-landing-page-main",
+      link: "https://lindo-code.github.io/sunnyside-agency-landing-page-main/",
+      objectives: [
+        "Create website landing page",
+        "Host as webpage on Github Pages",
+        "Publish Landing Page",
+      ],
+      tools: ["Javascript", "HTML", "CSS", "CSS Grid", "Flexbox"],
     },
   ],
 };
