@@ -48,7 +48,7 @@ class HomePage extends Main {
     this.about.container.setAttribute(this.createContainer[3][1], this.page);
     this.about.container.setAttribute(
       this.createContainer[3][2],
-      this.createContainer[2][1]
+      this.createContainer[2][1],
     );
     this.about.introDiv = `
       <img src=${homeContent.images.homeSvg} alt="person_sitting" class="svg-img" />
@@ -67,7 +67,7 @@ class HomePage extends Main {
           ${homeContent.text.interests[1][0]}
           <br><br>
         </p>
-        <a href=${homeContent.links.umuzi} id="deco" target="_blank"> Umuzi.org</a>
+       
       </div>`;
   }
 }

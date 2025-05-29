@@ -64,14 +64,51 @@ const portfolioContent = {
 
   cards: [
     {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/py.png",
-      title: "PYTHON",
-      link: "https://www.sololearn.com/profile/25472119",
-    },
-    {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/js.png",
       title: "JAVASCRIPT",
-      link: "https://www.freecodecamp.org/fcc44702f65-8d01-4507-9afb-4e03b1dbf7ce",
+      link: "https://github.com/Lindo-code",
+    },
+    {
+      img: "assets/icons/react.png",
+      title: "REACT",
+      link: "https://drive.google.com/file/d/109NwtlVsWI3aKXWWj5rMkSsGEUd1njvh/view?usp=drive_link",
+    },
+    {
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/git.png",
+      title: "GIT",
+      link: "https://github.com/Lindo-code",
+    },
+    {
+      img: "assets/icons/express.png",
+      title: "EXPRESS",
+      link: "https://github.com/Lindo-code",
+    },
+    {
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/node.png",
+      title: "NODE.JS",
+      link: "https://github.com/Lindo-code",
+    },
+
+    {
+      img: "assets/icons/jest.png",
+      title: "JEST",
+      link: "https://github.com/Lindo-code",
+    },
+    {
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/jasmine.png",
+      title: "JASMINE",
+      link: "https://github.com/Lindo-code",
+    },
+    {
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/postgresql.jpg",
+      title: "POSTGRESQL",
+      link: "https://www.sololearn.com/profile/25472119",
+    },
+
+    {
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/webpack.png",
+      title: "WEBPACK",
+      link: "https://github.com/Lindo-code",
     },
     {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/html.png",
@@ -83,100 +120,36 @@ const portfolioContent = {
       title: "CSS",
       link: "https://www.freecodecamp.org/fcc44702f65-8d01-4507-9afb-4e03b1dbf7ce",
     },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/postgresql.jpg",
-      title: "POSTGRESQL",
-      link: "https://www.sololearn.com/profile/25472119",
-    },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/docker.png",
-      title: "DOCKER",
-      link: "https://github.com/Lindo-code",
-    },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/jasmine.png",
-      title: "JASMINE",
-      link: "https://github.com/Lindo-code",
-    },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/git.png",
-      title: "GIT",
-      link: "https://github.com/Lindo-code",
-    },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/node.png",
-      title: "NODE",
-      link: "https://github.com/Lindo-code",
-    },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/icons/webpack.png",
-      title: "WEBPACK",
-      link: "https://github.com/Lindo-code",
-    },
   ],
 
   current: [
     {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-infiltration2.jpg",
-      title: "INFILTRATION COUNTDOWN",
-      alt: "infiltration_countdown_preview",
+      img: "assets/project-previews/creative-hub.webp",
+      title: "CREATIVE HUB",
+      alt: "creative_hub_preview",
       repoLink: null,
       link: "https://lindo-code-infiltration-countdown.netlify.app/",
-      objectives: ["Create Game", "Host Game on Github Pages", "Publish Game"],
-      tools: ["React", "Redux", "Javascript", "HTML", "CSS", "Flexbox"],
-    },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-infiltration2.jpg",
-      title: "INFILTRATION COUNTDOWN",
-      alt: "infiltration_countdown_preview",
-      repoLink: null,
-      link: "https://lindo-code-infiltration-countdown.netlify.app/",
-      objectives: ["Create Game", "Host Game on Github Pages", "Publish Game"],
-      tools: ["React", "Redux", "Javascript", "HTML", "CSS", "Flexbox"],
-    },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(writer).jpg",
-      title: "WRITER WEBSITE",
-      alt: "writer_website_preview",
-      repoLink: "https://github.com/Lindo-code/writer-website",
-      link: "https://lindo-code.github.io/writer-website",
       objectives: [
-        "Create writer portfolio website",
-        "Host website on Github Pages",
-        "Publish website",
+        "Create New Web App For Projects",
+        "Host App on Github Pages",
+        "Publish App",
+        "Migrate Portfolio",
       ],
-      tools: [
-        "Javascript Basics",
-        "HTML Basics",
-        "CSS Basics",
-        "CSS Grid",
-        "Flexbox",
-      ],
+      tools: ["React"],
+    },
+    {
+      img: "assets/project-previews/infiltration.webp",
+      title: "INFILTRATION COUNTDOWN",
+      alt: "infiltration_countdown_preview",
+      repoLink: null,
+      link: "https://lindo-code-infiltration-countdown.netlify.app/",
+      objectives: ["Create Game", "Host Game on Github Pages", "Publish Game"],
+      tools: ["React", "Redux", "Jest", "JavaScript", "HTML", "CSS"],
     },
   ],
   complete: [
     {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(semitone).jpg",
-      title: "SEMITONE DIFFERENCE",
-      alt: "app_preview",
-      repoLink: null,
-      link: "https://lindo-code-semitone-difference.netlify.app/",
-      objectives: [
-        "Create Semitone Difference App",
-        "Host App on Github Pages",
-      ],
-      tools: [
-        "Javascript Basics",
-        "HTML Basics",
-        "CSS Basics",
-        "CSS Grid",
-        "Flexbox",
-        "Jasmine",
-        "Webpack",
-      ],
-    },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-recipe1.jpg",
+      img: "assets/project-previews/recipe-search.webp",
       title: "RECIPE SEARCH APP",
       alt: "recipe_search_app_preview",
       repoLink: null,
@@ -186,10 +159,41 @@ const portfolioContent = {
         "Host as webpage on Github Pages",
         "Publish Recipe Search App",
       ],
-      tools: ["React", "Redux", "Javascript", "HTML", "CSS", "Material UI"],
+      tools: ["React", "Redux", "Javascript", "Material UI", "Rest API"],
     },
     {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-mem-react.jpg",
+      img: "assets/project-previews/conference.webp",
+      title: "QR CONFERENCE CONNECTOR",
+      alt: "app_preview",
+      repoLink: "https://github.com/Lindo-code",
+      link: null,
+      objectives: ["Create Mobile App"],
+      tools: ["React native", "Jest"],
+    },
+    {
+      img: "assets/project-previews/vario.webp",
+      title: "SIMPLE VARIOMETER",
+      alt: "app_preview",
+      repoLink: "https://github.com/Lindo-code",
+      link: null,
+      objectives: ["Create Mobile App"],
+      tools: ["React Native"],
+    },
+
+    {
+      img: "assets/project-previews/jambuddy.webp",
+      title: "SEMITONE DIFFERENCE",
+      alt: "app_preview",
+      repoLink: null,
+      link: "https://lindo-code-semitone-difference.netlify.app/",
+      objectives: [
+        "Create Semitone Difference App",
+        "Host App on Github Pages",
+      ],
+      tools: ["Javascript", "HTML", "CSS", "Jasmine", "Webpack"],
+    },
+    {
+      img: "assets/project-previews/memory-game.webp",
       title: "MEMORY: CARD GAME",
       alt: "card_game_preview",
       repoLink: null,
@@ -199,21 +203,7 @@ const portfolioContent = {
         "Host App on Github Pages",
         "Publish App",
       ],
-      tools: ["React", "Redux", "Javascript", "HTML", "CSS"],
-    },
-    {
-      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview(sunny).jpg",
-      title: "SUNNYSIDE AGENCY LANDING PAGE",
-      alt: "landing_page_preview",
-      repoLink:
-        "https://github.com/Lindo-code/sunnyside-agency-landing-page-main",
-      link: "https://lindo-code.github.io/sunnyside-agency-landing-page-main/",
-      objectives: [
-        "Create website landing page",
-        "Host Page on Github",
-        "Publish Landing Page",
-      ],
-      tools: ["Javascript", "HTML", "CSS", "CSS Grid", "Flexbox"],
+      tools: ["React", "Redux", "Jest"],
     },
   ],
 };
