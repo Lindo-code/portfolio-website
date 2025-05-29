@@ -46,18 +46,18 @@ class PortfolioPage extends Main {
   createProjectsContainer() {
     this.projects.container[this.projects.temp] = this.findEmptyDiv();
     this.projects.container[this.projects.temp].classList.add(
-      this.createContainer[0][0]
+      this.createContainer[0][0],
     );
     this.projects.container[this.projects.temp].classList.remove(
-      this.createContainer[3][0]
+      this.createContainer[3][0],
     );
     this.projects.container[this.projects.temp].setAttribute(
       this.createContainer[3][1],
-      this.page
+      this.page,
     );
     this.projects.container[this.projects.temp].setAttribute(
       this.createContainer[3][2],
-      this.createContainer[0][1]
+      this.createContainer[0][1],
     );
     this.projects[this.projects.temp] += this.addProjects();
   }
@@ -70,9 +70,12 @@ class PortfolioPage extends Main {
         <h4 class="color">${projects[i].title}</h4>
         <div class="img-text">
           <img src=${projects[i].img} alt=${
-        projects[i].alt
-      } class="project-img" />
-          <div class="all-project-details">
+            projects[i].alt
+          } class="project-img" />
+          <div class="all-project-details"> <div class="inline">
+                  ${this.addIcon(projects[i])}
+              </div>
+
               <h5>OBJECTIVES</h5>
               <ul class="custom-font" type="circle">
                 ${this.addList(projects[i].objectives)}
@@ -82,9 +85,6 @@ class PortfolioPage extends Main {
                 ${this.addTechUsed(projects[i].tools)}
               </form>
               <br>
-              <div class="inline">
-                  ${this.addIcon(projects[i])}
-              </div>
           </div>
         </div><br><br><br>`;
     }
@@ -117,10 +117,10 @@ class PortfolioPage extends Main {
       <i class="fas fa-globe" ></i>
     </a>`
       : project.repoLink === null
-      ? `<a href=${project.link} class="project-icon" target="_blank">
+        ? `<a href=${project.link} class="project-icon" target="_blank">
       <i class="fas fa-globe" ></i>
     </a>`
-      : `<a href=${project.repoLink} class="project-icon" target="_blank">
+        : `<a href=${project.repoLink} class="project-icon" target="_blank">
       <i class="fab fa-github-square" ></i>
     </a>`;
   }
@@ -129,15 +129,15 @@ class PortfolioPage extends Main {
     this.headings.container[this.headings.temp] = this.findEmptyDiv();
     this.headings.container[this.headings.temp].classList.add("heading");
     this.headings.container[this.headings.temp].classList.remove(
-      this.createContainer[3][0]
+      this.createContainer[3][0],
     );
     this.headings.container[this.headings.temp].setAttribute(
       this.createContainer[3][1],
-      this.page
+      this.page,
     );
     this.headings.container[this.headings.temp].setAttribute(
       this.createContainer[3][2],
-      "flex"
+      "flex",
     );
     this.headings[this.headings.temp] = `<h4 class="text-underline">${
       portfolioContent.strings.portfolioCategories[this.headings.temp]
@@ -150,11 +150,11 @@ class PortfolioPage extends Main {
     this.cards.cardsContainer.classList.remove(this.createContainer[3][0]);
     this.cards.cardsContainer.setAttribute(
       this.createContainer[3][1],
-      this.page
+      this.page,
     );
     this.cards.cardsContainer.setAttribute(
       this.createContainer[3][2],
-      this.createContainer[1][1]
+      this.createContainer[1][1],
     );
     this.cards.allCards = "";
     this.cards.allCards += this.addCards();
@@ -179,12 +179,12 @@ class PortfolioPage extends Main {
     this.headings.container.currProject.innerHTML = this.headings.currProject;
     this.projects.container.current.innerHTML = this.projects.current.replace(
       "undefined",
-      ""
+      "",
     );
     this.headings.container.compProject.innerHTML = this.headings.compProject;
     this.projects.container.complete.innerHTML = this.projects.complete.replace(
       "undefined",
-      ""
+      "",
     );
   }
 }
