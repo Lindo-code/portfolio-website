@@ -26,16 +26,16 @@ const homeContent = {
       "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/undraw/code_thinking.svg",
   },
   links: {
-    umuzi: "https://www.umuzi.org",
+    umuzi: "",
   },
   text: {
-    headingIntro: ["WHO AM I?", "INTERESTS & HOBBIES"],
+    headingIntro: ["PROFESSIONAL SUMMARY", "INTERESTS"],
     intro: [
       [
-        "I'm an aspiring web developer and all-round programmer, who's currently learning javascript for front-end web development and node for back-end web development, with the goal of becoming a full-stack web developer.",
+        "I'm a full-stack web developer with a strong foundation in both front-end and back-end technologies. My technical stack includes JavaScript (ES6+), React + React Native, Node.js, and SQL databases. I bring practical experience from real-world Agile team environments, where I’ve contributed to cross-functional projects and led technical teams.",
       ],
       [
-        "As someone who is highly focused and attentive to detail, I am always keen on giving each project I work on its own unique design, and even though I tend to lean more toward the design aspect of coding I'm able to appreciate the functionality that backend can offer to enhance any project.",
+        "I have a sharp eye for design and user experience, and I enjoy crafting clean, accessible, and engaging interfaces while ensuring seamless back-end integration. My recent role as a Junior Team Leader and intern at BBD allowed me to mentor peers, lead daily standups, facilitate upskilling sessions, and deepen my technical skills in production-level projects. I am passionate about design thinking, software architecture, and creating elegant, maintainable solutions that prioritize both user needs and team collaboration.",
       ],
     ],
     interests: [
@@ -114,6 +114,7 @@ const portfolioContent = {
       link: "https://github.com/Lindo-code",
     },
   ],
+
   current: [
     {
       img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-infiltration2.jpg",
@@ -121,11 +122,16 @@ const portfolioContent = {
       alt: "infiltration_countdown_preview",
       repoLink: null,
       link: "https://lindo-code-infiltration-countdown.netlify.app/",
-      objectives: [
-        "Create Game",
-        "Host Game on Github Pages",
-        "Publish Game",
-      ],
+      objectives: ["Create Game", "Host Game on Github Pages", "Publish Game"],
+      tools: ["React", "Redux", "Javascript", "HTML", "CSS", "Flexbox"],
+    },
+    {
+      img: "https://raw.githubusercontent.com/Lindo-code/portfolio-website/main/assets/project-previews/project-preview-infiltration2.jpg",
+      title: "INFILTRATION COUNTDOWN",
+      alt: "infiltration_countdown_preview",
+      repoLink: null,
+      link: "https://lindo-code-infiltration-countdown.netlify.app/",
+      objectives: ["Create Game", "Host Game on Github Pages", "Publish Game"],
       tools: ["React", "Redux", "Javascript", "HTML", "CSS", "Flexbox"],
     },
     {
