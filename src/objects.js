@@ -128,8 +128,9 @@ const portfolioContent = {
       title: "CREATIVE HUB",
       alt: "creative_hub_preview",
       repoLink: null,
-      link: "https://lindo-code-infiltration-countdown.netlify.app/",
+      link: "https://lindocode.com",
       objectives: [
+        "Status: In Development",
         "Create New Web App For Projects",
         "Host App on Github Pages",
         "Publish App",
@@ -143,7 +144,12 @@ const portfolioContent = {
       alt: "infiltration_countdown_preview",
       repoLink: null,
       link: "https://lindo-code-infiltration-countdown.netlify.app/",
-      objectives: ["Create Game", "Host Game on Github Pages", "Publish Game"],
+      objectives: [
+        "Status: In Development",
+        "Create Game",
+        "Host Game on Github Pages",
+        "Publish Game",
+      ],
       tools: ["React", "Redux", "Jest", "JavaScript", "HTML", "CSS"],
     },
   ],
@@ -160,6 +166,32 @@ const portfolioContent = {
         "Publish Recipe Search App",
       ],
       tools: ["React", "Redux", "Javascript", "Material UI", "Rest API"],
+    },
+
+    {
+      img: "assets/project-previews/jambuddy.webp",
+      title: "SEMITONE DIFFERENCE",
+      alt: "app_preview",
+      repoLink: null,
+      link: "https://lindo-code-semitone-difference.netlify.app/",
+      objectives: [
+        "Create Semitone Difference App",
+        "Host App on Github Pages",
+      ],
+      tools: ["Javascript", "HTML", "CSS", "Jasmine", "Webpack"],
+    },
+    {
+      img: "assets/project-previews/memory-game.webp",
+      title: "MEMORY GAME",
+      alt: "card_game_preview",
+      repoLink: null,
+      link: "https://lindo-code-memory-game.netlify.app/",
+      objectives: [
+        "Create Memory Game Web App",
+        "Host App on Github Pages",
+        "Publish App",
+      ],
+      tools: ["React", "Redux", "Jest"],
     },
     {
       img: "assets/project-previews/conference.webp",
@@ -178,32 +210,6 @@ const portfolioContent = {
       link: null,
       objectives: ["Create Mobile App"],
       tools: ["React Native"],
-    },
-
-    {
-      img: "assets/project-previews/jambuddy.webp",
-      title: "SEMITONE DIFFERENCE",
-      alt: "app_preview",
-      repoLink: null,
-      link: "https://lindo-code-semitone-difference.netlify.app/",
-      objectives: [
-        "Create Semitone Difference App",
-        "Host App on Github Pages",
-      ],
-      tools: ["Javascript", "HTML", "CSS", "Jasmine", "Webpack"],
-    },
-    {
-      img: "assets/project-previews/memory-game.webp",
-      title: "MEMORY: CARD GAME",
-      alt: "card_game_preview",
-      repoLink: null,
-      link: "https://lindo-code-memory-game.netlify.app/",
-      objectives: [
-        "Create Memory Game Web App",
-        "Host App on Github Pages",
-        "Publish App",
-      ],
-      tools: ["React", "Redux", "Jest"],
     },
   ],
 };
