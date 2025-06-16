@@ -13,6 +13,29 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+.site-migration-notice {
+  background: #ffe08a;
+  color: #2c2c2c;
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.site-migration-notice a {
+  color: #1a1a1a;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.site-migration-notice a:hover {
+  color: #ff6600;
+}
 
 /*--------------------------------------------------------------| GENERAL |--------------------------------------------------------*/
 .bottom-icon {

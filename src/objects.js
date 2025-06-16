@@ -191,7 +191,7 @@ const portfolioContent = {
         "Host App on Github Pages",
         "Publish App",
       ],
-      tools: ["React", "Redux", "Jest"],
+      tools: ["React", "Redux", "SQLite", "Jest"],
     },
     {
       img: "assets/project-previews/conference.webp",
